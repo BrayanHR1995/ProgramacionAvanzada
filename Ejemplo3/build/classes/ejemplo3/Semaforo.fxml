@@ -1,0 +1,2327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<ScrollPane prefHeight="774.0" prefWidth="1324.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ejemplo3.SemaforoController">
+   <content>
+      <AnchorPane id="AnchorPane" prefHeight="430.0" prefWidth="828.0">
+         <children>
+            <HBox layoutY="34.0" prefHeight="100.0" prefWidth="1321.0">
+               <children>
+                  <BorderPane prefHeight="90.0" prefWidth="199.0" style="-fx-border-color: #2A2121; -fx-background-color: #D3B8B8;">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                     <center>
+                        <Label alignment="CENTER" prefHeight="70.0" prefWidth="112.0" text="I" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font size="48.0" />
+                           </font>
+                        </Label>
+                     </center>
+                     <opaqueInsets>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </opaqueInsets>
+                  </BorderPane>
+                  <BorderPane layoutX="15.0" layoutY="15.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #2A2121; -fx-background-color: #D3B8B8;">
+                     <center>
+                        <Label alignment="CENTER" prefHeight="35.0" prefWidth="121.0" text="II" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font size="48.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </center>
+                     <opaqueInsets>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </BorderPane>
+                  <BorderPane layoutX="220.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #2A2121; -fx-background-color: #D3B8B8;">
+                     <center>
+                        <Label alignment="CENTER" prefHeight="35.0" prefWidth="121.0" text="III" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font size="48.0" />
+                           </font>
+                        </Label>
+                     </center>
+                     <opaqueInsets>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </BorderPane>
+                  <BorderPane layoutX="420.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #2A2121; -fx-background-color: #D3B8B8;">
+                     <center>
+                        <Label alignment="CENTER" prefHeight="35.0" prefWidth="121.0" text="IV" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font size="48.0" />
+                           </font>
+                        </Label>
+                     </center>
+                     <opaqueInsets>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </BorderPane>
+                  <BorderPane layoutX="620.0" layoutY="10.0" prefHeight="90.0" prefWidth="197.0" style="-fx-border-color: #2A2121; -fx-background-color: #D3B8B8;">
+                     <center>
+                        <Label alignment="CENTER" prefHeight="70.0" prefWidth="152.0" text="V" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font size="48.0" />
+                           </font>
+                        </Label>
+                     </center>
+                     <opaqueInsets>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </BorderPane>
+                  <BorderPane layoutX="820.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #2A2121; -fx-background-color: #D3B8B8;">
+                     <center>
+                        <Label alignment="CENTER" prefHeight="35.0" prefWidth="121.0" text="VI" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font size="48.0" />
+                           </font>
+                        </Label>
+                     </center>
+                     <opaqueInsets>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </BorderPane>
+                  <BorderPane layoutX="1020.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #2A2121; -fx-background-color: #D3B8B8;">
+                     <center>
+                        <Label alignment="CENTER" prefHeight="35.0" prefWidth="121.0" text="VII" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font size="48.0" />
+                           </font>
+                        </Label>
+                     </center>
+                     <opaqueInsets>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </BorderPane>
+                  <BorderPane layoutX="1143.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #2A2121; -fx-background-color: #D3B8B8;">
+                     <center>
+                        <Label alignment="CENTER" prefHeight="35.0" prefWidth="121.0" text="VIII" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font size="48.0" />
+                           </font>
+                        </Label>
+                     </center>
+                     <opaqueInsets>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </BorderPane>
+                  <BorderPane layoutX="1168.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #2A2121; -fx-background-color: #D3B8B8;">
+                     <center>
+                        <Label alignment="CENTER" prefHeight="35.0" prefWidth="121.0" text="IX" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font size="48.0" />
+                           </font>
+                        </Label>
+                     </center>
+                     <opaqueInsets>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </BorderPane>
+                  <BorderPane layoutX="1185.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #2A2121; -fx-background-color: #D3B8B8;">
+                     <center>
+                        <Label alignment="CENTER" prefHeight="35.0" prefWidth="121.0" text="X" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font size="48.0" />
+                           </font>
+                        </Label>
+                     </center>
+                     <opaqueInsets>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </BorderPane>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </HBox>
+            <HBox layoutY="134.0" prefHeight="100.0" prefWidth="1315.0">
+               <children>
+                  <BorderPane fx:id="bp1" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #2A2121; -fx-background-color: #dadada;">
+                     <bottom>
+                        <Label fx:id="labelc1" alignment="CENTER" prefHeight="17.0" prefWidth="127.0" style="-fx-border-color: #FFFFFF;" text="602101" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Label>
+                     </bottom>
+                     <left>
+                        <Label fx:id="labeln1" alignment="CENTER" contentDisplay="CENTER" prefHeight="19.0" prefWidth="71.0" style="-fx-border-color: #FFFFFF;" text="DEBE" textAlignment="RIGHT" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </left>
+                     <right>
+                        <Label fx:id="labelv1" alignment="CENTER" prefHeight="19.0" prefWidth="34.0" style="-fx-border-color: #FFFFFF;" text="0" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </right>
+                     <top>
+                        <Label fx:id="labelt1" alignment="CENTER" prefHeight="33.0" prefWidth="119.0" style="-fx-border-color: #FFFFFF;" text="Funda... de Programación" textAlignment="CENTER" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="10.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </top>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </BorderPane>
+                  <BorderPane fx:id="bp7" layoutX="15.0" layoutY="15.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #2A2121; -fx-background-color: #dadada;">
+                     <bottom>
+                        <Label fx:id="labelc7" alignment="CENTER" prefHeight="17.0" prefWidth="127.0" style="-fx-border-color: #FFFFFF;" text="602201" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </bottom>
+                     <left>
+                        <Label fx:id="labeln7" alignment="CENTER" contentDisplay="CENTER" prefHeight="19.0" prefWidth="71.0" style="-fx-border-color: #FFFFFF;" text="DEBE" textAlignment="RIGHT" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </left>
+                     <right>
+                        <Label fx:id="labelv7" alignment="CENTER" prefHeight="19.0" prefWidth="34.0" style="-fx-border-color: #FFFFFF;" text="0" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </right>
+                     <top>
+                        <Label alignment="CENTER" prefHeight="33.0" prefWidth="119.0" style="-fx-border-color: #FFFFFF;" text="Programación" textAlignment="CENTER" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="10.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </top>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </BorderPane>
+                  <BorderPane fx:id="bp12" layoutX="220.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #2A2121; -fx-background-color: #dadada;">
+                     <bottom>
+                        <Label fx:id="labelc12" alignment="CENTER" prefHeight="17.0" prefWidth="127.0" style="-fx-border-color: #FFFFFF;" text="602301" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </bottom>
+                     <left>
+                        <Label fx:id="labeln12" alignment="CENTER" contentDisplay="CENTER" prefHeight="19.0" prefWidth="71.0" style="-fx-border-color: #FFFFFF;" text="DEBE" textAlignment="RIGHT" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </left>
+                     <right>
+                        <Label fx:id="labelv12" alignment="CENTER" prefHeight="19.0" prefWidth="34.0" style="-fx-border-color: #FFFFFF;" text="0" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </right>
+                     <top>
+                        <Label alignment="CENTER" prefHeight="33.0" prefWidth="119.0" style="-fx-border-color: #FFFFFF;" text="Estructura de Datos" textAlignment="CENTER" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="10.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </top>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </BorderPane>
+                  <BorderPane fx:id="bp17" layoutX="420.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #2A2121; -fx-background-color: #dadada;">
+                     <bottom>
+                        <Label fx:id="labelc17" alignment="CENTER" prefHeight="17.0" prefWidth="127.0" style="-fx-border-color: #FFFFFF;" text="602401" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </bottom>
+                     <left>
+                        <Label fx:id="labeln17" alignment="CENTER" contentDisplay="CENTER" prefHeight="19.0" prefWidth="71.0" style="-fx-border-color: #FFFFFF;" text="DEBE" textAlignment="RIGHT" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </left>
+                     <right>
+                        <Label fx:id="labelv17" alignment="CENTER" prefHeight="19.0" prefWidth="34.0" style="-fx-border-color: #FFFFFF;" text="0" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </right>
+                     <top>
+                        <Label alignment="CENTER" prefHeight="33.0" prefWidth="119.0" style="-fx-border-color: #FFFFFF;" text="Teoria General de Sistemas" textAlignment="CENTER" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="10.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </top>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </BorderPane>
+                  <BorderPane fx:id="bp23" layoutX="620.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #2A2121; -fx-background-color: #dadada;">
+                     <bottom>
+                        <Label fx:id="labelc23" alignment="CENTER" prefHeight="17.0" prefWidth="127.0" style="-fx-border-color: #FFFFFF;" text="602501" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </bottom>
+                     <left>
+                        <Label fx:id="labeln23" alignment="CENTER" contentDisplay="CENTER" prefHeight="19.0" prefWidth="71.0" style="-fx-border-color: #FFFFFF;" text="DEBE" textAlignment="RIGHT" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </left>
+                     <right>
+                        <Label fx:id="labelv23" alignment="CENTER" prefHeight="19.0" prefWidth="34.0" style="-fx-border-color: #FFFFFF;" text="0" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </right>
+                     <top>
+                        <Label alignment="CENTER" prefHeight="33.0" prefWidth="119.0" style="-fx-border-color: #FFFFFF;" text="Sistemas Operativos" textAlignment="CENTER" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="10.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </top>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </BorderPane>
+                  <BorderPane fx:id="bp28" layoutX="820.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #2A2121; -fx-background-color: #dadada;">
+                     <bottom>
+                        <Label fx:id="labelc28" alignment="CENTER" prefHeight="17.0" prefWidth="127.0" style="-fx-border-color: #FFFFFF;" text="602601" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </bottom>
+                     <left>
+                        <Label fx:id="labeln28" alignment="CENTER" contentDisplay="CENTER" prefHeight="19.0" prefWidth="71.0" style="-fx-border-color: #FFFFFF;" text="DEBE" textAlignment="RIGHT" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </left>
+                     <right>
+                        <Label fx:id="labelv28" alignment="CENTER" prefHeight="19.0" prefWidth="34.0" style="-fx-border-color: #FFFFFF;" text="0" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </right>
+                     <top>
+                        <Label alignment="CENTER" prefHeight="33.0" prefWidth="119.0" style="-fx-border-color: #FFFFFF;" text="Ingeniería de Software" textAlignment="CENTER" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="10.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </top>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </BorderPane>
+                  <BorderPane fx:id="bp34" layoutX="1020.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #2A2121; -fx-background-color: #dadada;">
+                     <bottom>
+                        <Label fx:id="labelc34" alignment="CENTER" prefHeight="17.0" prefWidth="127.0" style="-fx-border-color: #FFFFFF;" text="602701" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </bottom>
+                     <left>
+                        <Label fx:id="labeln34" alignment="CENTER" contentDisplay="CENTER" prefHeight="19.0" prefWidth="71.0" style="-fx-border-color: #FFFFFF;" text="DEBE" textAlignment="RIGHT" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </left>
+                     <right>
+                        <Label fx:id="labelv34" alignment="CENTER" prefHeight="19.0" prefWidth="34.0" style="-fx-border-color: #FFFFFF;" text="0" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </right>
+                     <top>
+                        <Label alignment="CENTER" prefHeight="33.0" prefWidth="119.0" style="-fx-border-color: #FFFFFF;" text="Seminario de Investigación" textAlignment="CENTER" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="10.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </top>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </BorderPane>
+                  <BorderPane fx:id="bp40" layoutX="1138.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #2A2121; -fx-background-color: #dadada;">
+                     <bottom>
+                        <Label fx:id="labelc40" alignment="CENTER" prefHeight="17.0" prefWidth="127.0" style="-fx-border-color: #FFFFFF;" text="602801" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </bottom>
+                     <left>
+                        <Label fx:id="labeln40" alignment="CENTER" contentDisplay="CENTER" prefHeight="19.0" prefWidth="71.0" style="-fx-border-color: #FFFFFF;" text="DEBE" textAlignment="RIGHT" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </left>
+                     <right>
+                        <Label fx:id="labelv40" alignment="CENTER" prefHeight="19.0" prefWidth="34.0" style="-fx-border-color: #FFFFFF;" text="0" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </right>
+                     <top>
+                        <Label alignment="CENTER" prefHeight="33.0" prefWidth="119.0" style="-fx-border-color: #FFFFFF;" text="Curso Profundización I" textAlignment="CENTER" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="10.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </top>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </BorderPane>
+                  <BorderPane fx:id="bp45" layoutX="1161.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #2A2121; -fx-background-color: #dadada;">
+                     <bottom>
+                        <Label fx:id="labelc45" alignment="CENTER" prefHeight="17.0" prefWidth="127.0" style="-fx-border-color: #FFFFFF;" text="602901" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </bottom>
+                     <left>
+                        <Label fx:id="labeln45" alignment="CENTER" contentDisplay="CENTER" prefHeight="19.0" prefWidth="71.0" style="-fx-border-color: #FFFFFF;" text="DEBE" textAlignment="RIGHT" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </left>
+                     <right>
+                        <Label fx:id="labelv45" alignment="CENTER" prefHeight="19.0" prefWidth="34.0" style="-fx-border-color: #FFFFFF;" text="0" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </right>
+                     <top>
+                        <Label alignment="CENTER" prefHeight="33.0" prefWidth="119.0" style="-fx-border-color: #FFFFFF;" text="Curso Profundización II" textAlignment="CENTER" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="10.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </top>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </BorderPane>
+                  <BorderPane fx:id="bp50" layoutX="1180.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #2A2121; -fx-background-color: #dadada;">
+                     <bottom>
+                        <Label fx:id="labelc50" alignment="CENTER" prefHeight="17.0" prefWidth="127.0" style="-fx-border-color: #FFFFFF;" text="602001" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </bottom>
+                     <left>
+                        <Label fx:id="labeln50" alignment="CENTER" contentDisplay="CENTER" prefHeight="19.0" prefWidth="71.0" style="-fx-border-color: #FFFFFF;" text="DEBE" textAlignment="RIGHT" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </left>
+                     <right>
+                        <Label fx:id="labelv50" alignment="CENTER" prefHeight="19.0" prefWidth="34.0" style="-fx-border-color: #FFFFFF;" text="0" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </right>
+                     <top>
+                        <Label alignment="CENTER" prefHeight="33.0" prefWidth="119.0" style="-fx-border-color: #FFFFFF;" text="Curso Profundización III" textAlignment="CENTER" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="10.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </top>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </BorderPane>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </HBox>
+            <HBox layoutY="234.0" prefHeight="100.0" prefWidth="1315.0">
+               <children>
+                  <BorderPane fx:id="bp2" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #2A2121; -fx-background-color: #dadada;">
+                     <bottom>
+                        <Label fx:id="labelc2" alignment="CENTER" prefHeight="17.0" prefWidth="127.0" style="-fx-border-color: #FFFFFF;" text="602102" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </bottom>
+                     <left>
+                        <Label fx:id="labeln2" alignment="CENTER" contentDisplay="CENTER" prefHeight="19.0" prefWidth="71.0" style="-fx-border-color: #FFFFFF;" text="DEBE" textAlignment="RIGHT" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </left>
+                     <right>
+                        <Label fx:id="labelv2" alignment="CENTER" prefHeight="19.0" prefWidth="34.0" style="-fx-border-color: #FFFFFF;" text="0" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </right>
+                     <top>
+                        <Label fx:id="labelt2" alignment="CENTER" prefHeight="33.0" prefWidth="119.0" style="-fx-border-color: #FFFFFF;" text="Introducción a la Ingenieria de Sistemas" textAlignment="CENTER" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="10.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </top>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </BorderPane>
+                  <BorderPane fx:id="bp8" layoutX="15.0" layoutY="15.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #2A2121; -fx-background-color: #dadada;">
+                     <bottom>
+                        <Label fx:id="labelc8" alignment="CENTER" prefHeight="17.0" prefWidth="127.0" style="-fx-border-color: #FFFFFF;" text="602202" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </bottom>
+                     <left>
+                        <Label fx:id="labeln8" alignment="CENTER" contentDisplay="CENTER" prefHeight="19.0" prefWidth="71.0" style="-fx-border-color: #FFFFFF;" text="DEBE" textAlignment="RIGHT" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </left>
+                     <right>
+                        <Label fx:id="labelv8" alignment="CENTER" prefHeight="19.0" prefWidth="34.0" style="-fx-border-color: #FFFFFF;" text="0" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </right>
+                     <top>
+                        <Label alignment="CENTER" prefHeight="33.0" prefWidth="119.0" style="-fx-border-color: #FFFFFF;" text="Matematicas Discretas" textAlignment="CENTER" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="10.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </top>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </BorderPane>
+                  <BorderPane fx:id="bp13" layoutX="220.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #2A2121; -fx-background-color: #dadada;">
+                     <bottom>
+                        <Label fx:id="labelc13" alignment="CENTER" prefHeight="17.0" prefWidth="127.0" style="-fx-border-color: #FFFFFF;" text="602302" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </bottom>
+                     <left>
+                        <Label fx:id="labeln13" alignment="CENTER" contentDisplay="CENTER" prefHeight="19.0" prefWidth="71.0" style="-fx-border-color: #FFFFFF;" text="DEBE" textAlignment="RIGHT" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </left>
+                     <right>
+                        <Label fx:id="labelv13" alignment="CENTER" prefHeight="19.0" prefWidth="34.0" style="-fx-border-color: #FFFFFF;" text="0" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </right>
+                     <top>
+                        <Label alignment="CENTER" prefHeight="33.0" prefWidth="119.0" style="-fx-border-color: #FFFFFF;" text="Matematicas III" textAlignment="CENTER" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="10.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </top>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </BorderPane>
+                  <BorderPane fx:id="bp18" layoutX="420.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #2A2121; -fx-background-color: #dadada;">
+                     <bottom>
+                        <Label fx:id="labelc18" alignment="CENTER" prefHeight="17.0" prefWidth="127.0" style="-fx-border-color: #FFFFFF;" text="602402" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </bottom>
+                     <left>
+                        <Label fx:id="labeln18" alignment="CENTER" contentDisplay="CENTER" prefHeight="19.0" prefWidth="71.0" style="-fx-border-color: #FFFFFF;" text="DEBE" textAlignment="RIGHT" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </left>
+                     <right>
+                        <Label fx:id="labelv18" alignment="CENTER" prefHeight="19.0" prefWidth="34.0" style="-fx-border-color: #FFFFFF;" text="0" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </right>
+                     <top>
+                        <Label alignment="CENTER" prefHeight="33.0" prefWidth="119.0" style="-fx-border-color: #FFFFFF;" text="Bases de Datos" textAlignment="CENTER" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="10.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </top>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </BorderPane>
+                  <BorderPane fx:id="bp24" layoutX="620.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #2A2121; -fx-background-color: #dadada;">
+                     <bottom>
+                        <Label fx:id="labelc24" alignment="CENTER" prefHeight="17.0" prefWidth="127.0" style="-fx-border-color: #FFFFFF;" text="602502" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </bottom>
+                     <left>
+                        <Label fx:id="labeln24" alignment="CENTER" contentDisplay="CENTER" prefHeight="19.0" prefWidth="71.0" style="-fx-border-color: #FFFFFF;" text="DEBE" textAlignment="RIGHT" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </left>
+                     <right>
+                        <Label fx:id="labelv24" alignment="CENTER" prefHeight="19.0" prefWidth="34.0" style="-fx-border-color: #FFFFFF;" text="0" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </right>
+                     <top>
+                        <Label alignment="CENTER" prefHeight="33.0" prefWidth="119.0" style="-fx-border-color: #FFFFFF;" text="Análisis de Señales" textAlignment="CENTER" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="10.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </top>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </BorderPane>
+                  <BorderPane fx:id="bp29" layoutX="820.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #2A2121; -fx-background-color: #dadada;">
+                     <bottom>
+                        <Label fx:id="labelc29" alignment="CENTER" prefHeight="17.0" prefWidth="127.0" style="-fx-border-color: #FFFFFF;" text="602602" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </bottom>
+                     <left>
+                        <Label fx:id="labeln29" alignment="CENTER" contentDisplay="CENTER" prefHeight="19.0" prefWidth="71.0" style="-fx-border-color: #FFFFFF;" text="DEBE" textAlignment="RIGHT" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </left>
+                     <right>
+                        <Label fx:id="labelv29" alignment="CENTER" prefHeight="19.0" prefWidth="34.0" style="-fx-border-color: #FFFFFF;" text="0" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </right>
+                     <top>
+                        <Label alignment="CENTER" prefHeight="33.0" prefWidth="119.0" style="-fx-border-color: #FFFFFF;" text="Sistemas de Comunicacion" textAlignment="CENTER" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="10.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </top>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </BorderPane>
+                  <BorderPane fx:id="bp35" layoutX="1020.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #2A2121; -fx-background-color: #dadada;">
+                     <bottom>
+                        <Label fx:id="labelc35" alignment="CENTER" prefHeight="17.0" prefWidth="127.0" style="-fx-border-color: #FFFFFF;" text="602702" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </bottom>
+                     <left>
+                        <Label fx:id="labeln35" alignment="CENTER" contentDisplay="CENTER" prefHeight="19.0" prefWidth="71.0" style="-fx-border-color: #FFFFFF;" text="DEBE" textAlignment="RIGHT" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </left>
+                     <right>
+                        <Label fx:id="labelv35" alignment="CENTER" prefHeight="19.0" prefWidth="34.0" style="-fx-border-color: #FFFFFF;" text="0" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </right>
+                     <top>
+                        <Label alignment="CENTER" prefHeight="33.0" prefWidth="119.0" style="-fx-border-color: #FFFFFF;" text="Redes de Computadores" textAlignment="CENTER" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="10.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </top>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </BorderPane>
+                  <BorderPane fx:id="bp41" layoutX="1138.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #2A2121; -fx-background-color: #dadada;">
+                     <bottom>
+                        <Label fx:id="labelc41" alignment="CENTER" prefHeight="17.0" prefWidth="127.0" style="-fx-border-color: #FFFFFF;" text="602802" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </bottom>
+                     <left>
+                        <Label fx:id="labeln41" alignment="CENTER" contentDisplay="CENTER" prefHeight="19.0" prefWidth="71.0" style="-fx-border-color: #FFFFFF;" text="DEBE" textAlignment="RIGHT" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </left>
+                     <right>
+                        <Label fx:id="labelv41" alignment="CENTER" prefHeight="19.0" prefWidth="34.0" style="-fx-border-color: #FFFFFF;" text="0" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </right>
+                     <top>
+                        <Label alignment="CENTER" prefHeight="33.0" prefWidth="119.0" style="-fx-border-color: #FFFFFF;" text="Algoritmia Avanzada" textAlignment="CENTER" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="10.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </top>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </BorderPane>
+                  <BorderPane fx:id="bp46" layoutX="1161.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #2A2121; -fx-background-color: #dadada;">
+                     <bottom>
+                        <Label fx:id="labelc46" alignment="CENTER" prefHeight="17.0" prefWidth="127.0" style="-fx-border-color: #FFFFFF;" text="602902" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </bottom>
+                     <left>
+                        <Label fx:id="labeln46" alignment="CENTER" contentDisplay="CENTER" prefHeight="19.0" prefWidth="71.0" style="-fx-border-color: #FFFFFF;" text="DEBE" textAlignment="RIGHT" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </left>
+                     <right>
+                        <Label fx:id="labelv46" alignment="CENTER" prefHeight="19.0" prefWidth="34.0" style="-fx-border-color: #FFFFFF;" text="0" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </right>
+                     <top>
+                        <Label alignment="CENTER" prefHeight="33.0" prefWidth="119.0" style="-fx-border-color: #FFFFFF;" text="Sistema y Organizaciones" textAlignment="CENTER" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="10.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </top>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </BorderPane>
+                  <BorderPane fx:id="bp51" layoutX="1180.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #2A2121; -fx-background-color: #dadada;">
+                     <bottom>
+                        <Label fx:id="labelc51" alignment="CENTER" prefHeight="17.0" prefWidth="127.0" style="-fx-border-color: #FFFFFF;" text="602002" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </bottom>
+                     <left>
+                        <Label fx:id="labeln51" alignment="CENTER" contentDisplay="CENTER" prefHeight="19.0" prefWidth="71.0" style="-fx-border-color: #FFFFFF;" text="DEBE" textAlignment="RIGHT" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </left>
+                     <right>
+                        <Label fx:id="labelv51" alignment="CENTER" prefHeight="19.0" prefWidth="34.0" style="-fx-border-color: #FFFFFF;" text="0" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </right>
+                     <top>
+                        <Label alignment="CENTER" prefHeight="33.0" prefWidth="119.0" style="-fx-border-color: #FFFFFF;" text="Electiva Profesional V" textAlignment="CENTER" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="10.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </top>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </BorderPane>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </HBox>
+            <HBox layoutY="334.0" prefHeight="100.0" prefWidth="1315.0">
+               <children>
+                  <BorderPane fx:id="bp3" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #2A2121; -fx-background-color: #dadada;">
+                     <bottom>
+                        <Label fx:id="labelc3" alignment="CENTER" prefHeight="17.0" prefWidth="127.0" style="-fx-border-color: #FFFFFF;" text="602103" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </bottom>
+                     <left>
+                        <Label fx:id="labeln3" alignment="CENTER" contentDisplay="CENTER" prefHeight="19.0" prefWidth="71.0" style="-fx-border-color: #FFFFFF;" text="DEBE" textAlignment="RIGHT" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </left>
+                     <right>
+                        <Label fx:id="labelv3" alignment="CENTER" prefHeight="19.0" prefWidth="34.0" style="-fx-border-color: #FFFFFF;" text="0" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </right>
+                     <top>
+                        <Label fx:id="labelt3" alignment="CENTER" prefHeight="33.0" prefWidth="119.0" style="-fx-border-color: #FFFFFF;" text="Matematicas I" textAlignment="CENTER" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="10.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </top>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </BorderPane>
+                  <BorderPane fx:id="bp9" layoutX="15.0" layoutY="15.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #2A2121; -fx-background-color: #dadada;">
+                     <bottom>
+                        <Label fx:id="labelc9" alignment="CENTER" prefHeight="17.0" prefWidth="127.0" style="-fx-border-color: #FFFFFF;" text="602203" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </bottom>
+                     <left>
+                        <Label fx:id="labeln9" alignment="CENTER" contentDisplay="CENTER" prefHeight="19.0" prefWidth="71.0" style="-fx-border-color: #FFFFFF;" text="DEBE" textAlignment="RIGHT" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </left>
+                     <right>
+                        <Label fx:id="labelv9" alignment="CENTER" prefHeight="19.0" prefWidth="34.0" style="-fx-border-color: #FFFFFF;" text="0" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </right>
+                     <top>
+                        <Label alignment="CENTER" prefHeight="33.0" prefWidth="119.0" style="-fx-border-color: #FFFFFF;" text="Matematicas II" textAlignment="CENTER" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="10.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </top>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </BorderPane>
+                  <BorderPane fx:id="bp14" layoutX="220.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #2A2121; -fx-background-color: #dadada;">
+                     <bottom>
+                        <Label fx:id="labelc14" alignment="CENTER" prefHeight="17.0" prefWidth="127.0" style="-fx-border-color: #FFFFFF;" text="602303" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </bottom>
+                     <left>
+                        <Label fx:id="labeln14" alignment="CENTER" contentDisplay="CENTER" prefHeight="19.0" prefWidth="71.0" style="-fx-border-color: #FFFFFF;" text="DEBE" textAlignment="RIGHT" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </left>
+                     <right>
+                        <Label fx:id="labelv14" alignment="CENTER" prefHeight="19.0" prefWidth="34.0" style="-fx-border-color: #FFFFFF;" text="0" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </right>
+                     <top>
+                        <Label alignment="CENTER" prefHeight="33.0" prefWidth="119.0" style="-fx-border-color: #FFFFFF;" text="Ecuaciones Diferenciales" textAlignment="CENTER" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="10.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </top>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </BorderPane>
+                  <BorderPane fx:id="bp19" layoutX="420.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #2A2121; -fx-background-color: #dadada;">
+                     <bottom>
+                        <Label fx:id="labelc19" alignment="CENTER" prefHeight="17.0" prefWidth="127.0" style="-fx-border-color: #FFFFFF;" text="602403" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </bottom>
+                     <left>
+                        <Label fx:id="labeln19" alignment="CENTER" contentDisplay="CENTER" prefHeight="19.0" prefWidth="71.0" style="-fx-border-color: #FFFFFF;" text="DEBE" textAlignment="RIGHT" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </left>
+                     <right>
+                        <Label fx:id="labelv19" alignment="CENTER" prefHeight="19.0" prefWidth="34.0" style="-fx-border-color: #FFFFFF;" text="0" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </right>
+                     <top>
+                        <Label alignment="CENTER" prefHeight="33.0" prefWidth="119.0" style="-fx-border-color: #FFFFFF;" text="Arquitectura de Computadores" textAlignment="CENTER" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="10.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </top>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </BorderPane>
+                  <BorderPane fx:id="bp25" layoutX="620.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #2A2121; -fx-background-color: #dadada;">
+                     <bottom>
+                        <Label fx:id="labelc25" alignment="CENTER" prefHeight="17.0" prefWidth="127.0" style="-fx-border-color: #FFFFFF;" text="602503" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </bottom>
+                     <left>
+                        <Label fx:id="labeln25" alignment="CENTER" contentDisplay="CENTER" prefHeight="19.0" prefWidth="71.0" style="-fx-border-color: #FFFFFF;" text="DEBE" textAlignment="RIGHT" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </left>
+                     <right>
+                        <Label fx:id="labelv25" alignment="CENTER" prefHeight="19.0" prefWidth="34.0" style="-fx-border-color: #FFFFFF;" text="0" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </right>
+                     <top>
+                        <Label alignment="CENTER" prefHeight="33.0" prefWidth="119.0" style="-fx-border-color: #FFFFFF;" text="Fundamentos de IS" textAlignment="CENTER" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="10.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </top>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </BorderPane>
+                  <BorderPane fx:id="bp30" layoutX="820.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #2A2121; -fx-background-color: #dadada;">
+                     <bottom>
+                        <Label fx:id="labelc30" alignment="CENTER" prefHeight="17.0" prefWidth="127.0" style="-fx-border-color: #FFFFFF;" text="602603" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </bottom>
+                     <left>
+                        <Label fx:id="labeln30" alignment="CENTER" contentDisplay="CENTER" prefHeight="19.0" prefWidth="71.0" style="-fx-border-color: #FFFFFF;" text="DEBE" textAlignment="RIGHT" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </left>
+                     <right>
+                        <Label fx:id="labelv30" alignment="CENTER" prefHeight="19.0" prefWidth="34.0" style="-fx-border-color: #FFFFFF;" text="0" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </right>
+                     <top>
+                        <Label alignment="CENTER" prefHeight="33.0" prefWidth="119.0" style="-fx-border-color: #FFFFFF;" text="Modelamiento de Sistemas" textAlignment="CENTER" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="10.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </top>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </BorderPane>
+                  <BorderPane fx:id="bp36" layoutX="1020.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #2A2121; -fx-background-color: #dadada;">
+                     <bottom>
+                        <Label fx:id="labelc36" alignment="CENTER" prefHeight="17.0" prefWidth="127.0" style="-fx-border-color: #FFFFFF;" text="602703" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </bottom>
+                     <left>
+                        <Label fx:id="labeln36" alignment="CENTER" contentDisplay="CENTER" prefHeight="19.0" prefWidth="71.0" style="-fx-border-color: #FFFFFF;" text="DEBE" textAlignment="RIGHT" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </left>
+                     <right>
+                        <Label fx:id="labelv36" alignment="CENTER" prefHeight="19.0" prefWidth="34.0" style="-fx-border-color: #FFFFFF;" text="0" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </right>
+                     <top>
+                        <Label alignment="CENTER" prefHeight="33.0" prefWidth="119.0" style="-fx-border-color: #FFFFFF;" text="Control Analogo" textAlignment="CENTER" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="10.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </top>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </BorderPane>
+                  <BorderPane fx:id="bp42" layoutX="1138.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #2A2121; -fx-background-color: #dadada;">
+                     <bottom>
+                        <Label fx:id="labelc42" alignment="CENTER" prefHeight="17.0" prefWidth="127.0" style="-fx-border-color: #FFFFFF;" text="602803" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </bottom>
+                     <left>
+                        <Label fx:id="labeln42" alignment="CENTER" contentDisplay="CENTER" prefHeight="19.0" prefWidth="71.0" style="-fx-border-color: #FFFFFF;" text="DEBE" textAlignment="RIGHT" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </left>
+                     <right>
+                        <Label fx:id="labelv42" alignment="CENTER" prefHeight="19.0" prefWidth="34.0" style="-fx-border-color: #FFFFFF;" text="0" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </right>
+                     <top>
+                        <Label alignment="CENTER" prefHeight="33.0" prefWidth="119.0" style="-fx-border-color: #FFFFFF;" text="Electiva Profesional III" textAlignment="CENTER" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="10.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </top>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </BorderPane>
+                  <BorderPane fx:id="bp47" layoutX="1161.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #2A2121; -fx-background-color: #dadada;">
+                     <bottom>
+                        <Label fx:id="labelc47" alignment="CENTER" prefHeight="17.0" prefWidth="127.0" style="-fx-border-color: #FFFFFF;" text="602903" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </bottom>
+                     <left>
+                        <Label fx:id="labeln47" alignment="CENTER" contentDisplay="CENTER" prefHeight="19.0" prefWidth="71.0" style="-fx-border-color: #FFFFFF;" text="DEBE" textAlignment="RIGHT" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </left>
+                     <right>
+                        <Label fx:id="labelv47" alignment="CENTER" prefHeight="19.0" prefWidth="34.0" style="-fx-border-color: #FFFFFF;" text="0" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </right>
+                     <top>
+                        <Label alignment="CENTER" prefHeight="33.0" prefWidth="119.0" style="-fx-border-color: #FFFFFF;" text="Electiva Profesional IV" textAlignment="CENTER" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="10.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </top>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </BorderPane>
+                  <BorderPane fx:id="bp52" layoutX="1180.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #2A2121; -fx-background-color: #dadada;">
+                     <bottom>
+                        <Label fx:id="labelc52" alignment="CENTER" prefHeight="17.0" prefWidth="127.0" style="-fx-border-color: #FFFFFF;" text="602003" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </bottom>
+                     <left>
+                        <Label fx:id="labeln52" alignment="CENTER" contentDisplay="CENTER" prefHeight="19.0" prefWidth="71.0" style="-fx-border-color: #FFFFFF;" text="DEBE" textAlignment="RIGHT" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </left>
+                     <right>
+                        <Label fx:id="labelv52" alignment="CENTER" prefHeight="19.0" prefWidth="34.0" style="-fx-border-color: #FFFFFF;" text="0" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </right>
+                     <top>
+                        <Label alignment="CENTER" prefHeight="33.0" prefWidth="119.0" style="-fx-border-color: #FFFFFF;" text="Electiva Complementaria II" textAlignment="CENTER" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="10.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </top>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </BorderPane>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </HBox>
+            <HBox layoutY="434.0" prefHeight="100.0" prefWidth="1315.0">
+               <children>
+                  <BorderPane fx:id="bp4" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #2A2121; -fx-background-color: #dadada;">
+                     <bottom>
+                        <Label fx:id="labelc4" alignment="CENTER" prefHeight="17.0" prefWidth="127.0" style="-fx-border-color: #FFFFFF;" text="602104" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </bottom>
+                     <left>
+                        <Label fx:id="labeln4" alignment="CENTER" contentDisplay="CENTER" prefHeight="19.0" prefWidth="71.0" style="-fx-border-color: #FFFFFF;" text="DEBE" textAlignment="RIGHT" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </left>
+                     <right>
+                        <Label fx:id="labelv4" alignment="CENTER" prefHeight="19.0" prefWidth="34.0" style="-fx-border-color: #FFFFFF;" text="0" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </right>
+                     <top>
+                        <Label fx:id="labelt4" alignment="CENTER" prefHeight="33.0" prefWidth="119.0" style="-fx-border-color: #FFFFFF;" text="Algebra Lineal" textAlignment="CENTER" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="10.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </top>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </BorderPane>
+                  <BorderPane fx:id="bp10" layoutX="15.0" layoutY="15.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #2A2121; -fx-background-color: #dadada;">
+                     <bottom>
+                        <Label fx:id="labelc10" alignment="CENTER" prefHeight="17.0" prefWidth="127.0" style="-fx-border-color: #FFFFFF;" text="602204" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </bottom>
+                     <left>
+                        <Label fx:id="labeln10" alignment="CENTER" contentDisplay="CENTER" prefHeight="19.0" prefWidth="71.0" style="-fx-border-color: #FFFFFF;" text="DEBE" textAlignment="RIGHT" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </left>
+                     <right>
+                        <Label fx:id="labelv10" alignment="CENTER" prefHeight="19.0" prefWidth="34.0" style="-fx-border-color: #FFFFFF;" text="0" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </right>
+                     <top>
+                        <Label alignment="CENTER" prefHeight="33.0" prefWidth="119.0" style="-fx-border-color: #FFFFFF;" text="Fisica I" textAlignment="CENTER" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="10.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </top>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </BorderPane>
+                  <BorderPane fx:id="bp15" layoutX="220.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #2A2121; -fx-background-color: #dadada;">
+                     <bottom>
+                        <Label fx:id="labelc15" alignment="CENTER" prefHeight="17.0" prefWidth="127.0" style="-fx-border-color: #FFFFFF;" text="602304" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </bottom>
+                     <left>
+                        <Label fx:id="labeln15" alignment="CENTER" contentDisplay="CENTER" prefHeight="19.0" prefWidth="71.0" style="-fx-border-color: #FFFFFF;" text="DEBE" textAlignment="RIGHT" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </left>
+                     <right>
+                        <Label fx:id="labelv15" alignment="CENTER" prefHeight="19.0" prefWidth="34.0" style="-fx-border-color: #FFFFFF;" text="0" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </right>
+                     <top>
+                        <Label alignment="CENTER" prefHeight="33.0" prefWidth="119.0" style="-fx-border-color: #FFFFFF;" text="Fisica II" textAlignment="CENTER" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="10.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </top>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </BorderPane>
+                  <BorderPane fx:id="bp20" layoutX="420.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #2A2121; -fx-background-color: #dadada;">
+                     <bottom>
+                        <Label fx:id="labelc20" alignment="CENTER" prefHeight="17.0" prefWidth="127.0" style="-fx-border-color: #FFFFFF;" text="602404" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </bottom>
+                     <left>
+                        <Label fx:id="labeln20" alignment="CENTER" contentDisplay="CENTER" prefHeight="19.0" prefWidth="71.0" style="-fx-border-color: #FFFFFF;" text="DEBE" textAlignment="RIGHT" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </left>
+                     <right>
+                        <Label fx:id="labelv20" alignment="CENTER" prefHeight="19.0" prefWidth="34.0" style="-fx-border-color: #FFFFFF;" text="0" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </right>
+                     <top>
+                        <Label alignment="CENTER" prefHeight="33.0" prefWidth="119.0" style="-fx-border-color: #FFFFFF;" text="Matematicas Especiales" textAlignment="CENTER" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="10.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </top>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </BorderPane>
+                  <BorderPane fx:id="bp26" layoutX="620.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #2A2121; -fx-background-color: #dadada;">
+                     <bottom>
+                        <Label fx:id="labelc26" alignment="CENTER" prefHeight="17.0" prefWidth="127.0" style="-fx-border-color: #FFFFFF;" text="602504" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </bottom>
+                     <left>
+                        <Label fx:id="labeln26" alignment="CENTER" contentDisplay="CENTER" prefHeight="19.0" prefWidth="71.0" style="-fx-border-color: #FFFFFF;" text="DEBE" textAlignment="RIGHT" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </left>
+                     <right>
+                        <Label fx:id="labelv26" alignment="CENTER" prefHeight="19.0" prefWidth="34.0" style="-fx-border-color: #FFFFFF;" text="0" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </right>
+                     <top>
+                        <Label alignment="CENTER" prefHeight="33.0" prefWidth="119.0" style="-fx-border-color: #FFFFFF;" text="Probabilidad  y Estadistica" textAlignment="CENTER" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="10.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </top>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </BorderPane>
+                  <BorderPane fx:id="bp31" layoutX="820.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #2A2121; -fx-background-color: #dadada;">
+                     <bottom>
+                        <Label fx:id="labelc31" alignment="CENTER" prefHeight="17.0" prefWidth="127.0" style="-fx-border-color: #FFFFFF;" text="602604" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </bottom>
+                     <left>
+                        <Label fx:id="labeln31" alignment="CENTER" contentDisplay="CENTER" prefHeight="19.0" prefWidth="71.0" style="-fx-border-color: #FFFFFF;" text="DEBE" textAlignment="RIGHT" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </left>
+                     <right>
+                        <Label fx:id="labelv31" alignment="CENTER" prefHeight="19.0" prefWidth="34.0" style="-fx-border-color: #FFFFFF;" text="0" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </right>
+                     <top>
+                        <Label alignment="CENTER" prefHeight="33.0" prefWidth="119.0" style="-fx-border-color: #FFFFFF;" text="Sistemas Distribuidos" textAlignment="CENTER" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="10.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </top>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </BorderPane>
+                  <BorderPane fx:id="bp37" layoutX="1020.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #2A2121; -fx-background-color: #dadada;">
+                     <bottom>
+                        <Label fx:id="labelc37" alignment="CENTER" prefHeight="17.0" prefWidth="127.0" style="-fx-border-color: #FFFFFF;" text="602704" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </bottom>
+                     <left>
+                        <Label fx:id="labeln37" alignment="CENTER" contentDisplay="CENTER" prefHeight="19.0" prefWidth="71.0" style="-fx-border-color: #FFFFFF;" text="DEBE" textAlignment="RIGHT" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </left>
+                     <right>
+                        <Label fx:id="labelv37" alignment="CENTER" prefHeight="19.0" prefWidth="34.0" style="-fx-border-color: #FFFFFF;" text="0" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </right>
+                     <top>
+                        <Label alignment="CENTER" prefHeight="33.0" prefWidth="119.0" style="-fx-border-color: #FFFFFF;" text="Optimizacion" textAlignment="CENTER" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="10.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </top>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </BorderPane>
+                  <BorderPane fx:id="bp43" layoutX="1138.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #2A2121; -fx-background-color: #dadada;">
+                     <bottom>
+                        <Label fx:id="labelc43" alignment="CENTER" prefHeight="17.0" prefWidth="127.0" style="-fx-border-color: #FFFFFF;" text="602804" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </bottom>
+                     <left>
+                        <Label fx:id="labeln43" alignment="CENTER" contentDisplay="CENTER" prefHeight="19.0" prefWidth="71.0" style="-fx-border-color: #FFFFFF;" text="DEBE" textAlignment="RIGHT" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </left>
+                     <right>
+                        <Label fx:id="labelv43" alignment="CENTER" prefHeight="19.0" prefWidth="34.0" style="-fx-border-color: #FFFFFF;" text="0" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </right>
+                     <top>
+                        <Label alignment="CENTER" prefHeight="33.0" prefWidth="119.0" style="-fx-border-color: #FFFFFF;" text="Procesos Estocasticos" textAlignment="CENTER" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="10.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </top>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </BorderPane>
+                  <BorderPane fx:id="bp48" layoutX="1161.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #2A2121; -fx-background-color: #dadada;">
+                     <bottom>
+                        <Label fx:id="labelc48" alignment="CENTER" prefHeight="17.0" prefWidth="127.0" style="-fx-border-color: #FFFFFF;" text="602904" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </bottom>
+                     <left>
+                        <Label fx:id="labeln48" alignment="CENTER" contentDisplay="CENTER" prefHeight="19.0" prefWidth="71.0" style="-fx-border-color: #FFFFFF;" text="DEBE" textAlignment="RIGHT" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </left>
+                     <right>
+                        <Label fx:id="labelv48" alignment="CENTER" prefHeight="19.0" prefWidth="34.0" style="-fx-border-color: #FFFFFF;" text="0" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </right>
+                     <top>
+                        <Label alignment="CENTER" prefHeight="33.0" prefWidth="119.0" style="-fx-border-color: #FFFFFF;" text="Simulacion Computacional" textAlignment="CENTER" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="10.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </top>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </BorderPane>
+                  <BorderPane fx:id="bp53" layoutX="1180.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #2A2121; -fx-background-color: #dadada;">
+                     <bottom>
+                        <Label fx:id="labelc53" alignment="CENTER" prefHeight="17.0" prefWidth="127.0" style="-fx-border-color: #FFFFFF;" text="602004" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </bottom>
+                     <left>
+                        <Label fx:id="labeln53" alignment="CENTER" contentDisplay="CENTER" prefHeight="19.0" prefWidth="71.0" style="-fx-border-color: #FFFFFF;" text="DEBE" textAlignment="RIGHT" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </left>
+                     <right>
+                        <Label fx:id="labelv53" alignment="CENTER" prefHeight="19.0" prefWidth="34.0" style="-fx-border-color: #FFFFFF;" text="0" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </right>
+                     <top>
+                        <Label alignment="CENTER" prefHeight="33.0" prefWidth="119.0" style="-fx-border-color: #FFFFFF;" text="Trabajo de Grado" textAlignment="CENTER" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="10.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </top>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </BorderPane>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </HBox>
+            <HBox layoutY="534.0" prefHeight="100.0" prefWidth="1315.0">
+               <children>
+                  <BorderPane fx:id="bp5" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #2A2121; -fx-background-color: #dadada;">
+                     <bottom>
+                        <Label fx:id="labelc5" alignment="CENTER" prefHeight="17.0" prefWidth="127.0" style="-fx-border-color: #FFFFFF;" text="602105" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </bottom>
+                     <left>
+                        <Label fx:id="labeln5" alignment="CENTER" contentDisplay="CENTER" prefHeight="19.0" prefWidth="71.0" style="-fx-border-color: #FFFFFF;" text="DEBE" textAlignment="RIGHT" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </left>
+                     <right>
+                        <Label fx:id="labelv5" alignment="CENTER" prefHeight="19.0" prefWidth="34.0" style="-fx-border-color: #FFFFFF;" text="0" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </right>
+                     <top>
+                        <Label fx:id="labelt5" alignment="CENTER" prefHeight="33.0" prefWidth="119.0" style="-fx-border-color: #FFFFFF;" text="Procesos Comunicativos" textAlignment="CENTER" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="10.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </top>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </BorderPane>
+                  <BorderPane fx:id="bp11" layoutX="15.0" layoutY="15.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #2A2121; -fx-background-color: #dadada;">
+                     <bottom>
+                        <Label fx:id="labelc11" alignment="CENTER" prefHeight="17.0" prefWidth="127.0" style="-fx-border-color: #FFFFFF;" text="602205" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </bottom>
+                     <left>
+                        <Label fx:id="labeln11" alignment="CENTER" contentDisplay="CENTER" prefHeight="19.0" prefWidth="71.0" style="-fx-border-color: #FFFFFF;" text="DEBE" textAlignment="RIGHT" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </left>
+                     <right>
+                        <Label fx:id="labelv11" alignment="CENTER" prefHeight="19.0" prefWidth="34.0" style="-fx-border-color: #FFFFFF;" text="0" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </right>
+                     <top>
+                        <Label alignment="CENTER" prefHeight="33.0" prefWidth="119.0" style="-fx-border-color: #FFFFFF;" text="Catedra Orinoquia" textAlignment="CENTER" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="10.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </top>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </BorderPane>
+                  <BorderPane fx:id="bp16" layoutX="220.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #2A2121; -fx-background-color: #dadada;">
+                     <bottom>
+                        <Label fx:id="labelc16" alignment="CENTER" prefHeight="17.0" prefWidth="127.0" style="-fx-border-color: #FFFFFF;" text="602305" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </bottom>
+                     <left>
+                        <Label fx:id="labeln16" alignment="CENTER" contentDisplay="CENTER" prefHeight="19.0" prefWidth="71.0" style="-fx-border-color: #FFFFFF;" text="DEBE" textAlignment="RIGHT" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </left>
+                     <right>
+                        <Label fx:id="labelv16" alignment="CENTER" prefHeight="19.0" prefWidth="34.0" style="-fx-border-color: #FFFFFF;" text="0" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </right>
+                     <top>
+                        <Label alignment="CENTER" prefHeight="33.0" prefWidth="119.0" style="-fx-border-color: #FFFFFF;" text="Electronica Basica" textAlignment="CENTER" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="10.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </top>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </BorderPane>
+                  <BorderPane fx:id="bp21" layoutX="420.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #2A2121; -fx-background-color: #dadada;">
+                     <bottom>
+                        <Label fx:id="labelc21" alignment="CENTER" prefHeight="17.0" prefWidth="127.0" style="-fx-border-color: #FFFFFF;" text="602405" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </bottom>
+                     <left>
+                        <Label fx:id="labeln21" alignment="CENTER" contentDisplay="CENTER" prefHeight="19.0" prefWidth="71.0" style="-fx-border-color: #FFFFFF;" text="DEBE" textAlignment="RIGHT" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </left>
+                     <right>
+                        <Label fx:id="labelv21" alignment="CENTER" prefHeight="19.0" prefWidth="34.0" style="-fx-border-color: #FFFFFF;" text="0" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </right>
+                     <top>
+                        <Label alignment="CENTER" prefHeight="33.0" prefWidth="119.0" style="-fx-border-color: #FFFFFF;" text="Fisica III" textAlignment="CENTER" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="10.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </top>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </BorderPane>
+                  <BorderPane fx:id="bp27" layoutX="620.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #2A2121; -fx-background-color: #dadada;">
+                     <bottom>
+                        <Label fx:id="labelc27" alignment="CENTER" prefHeight="17.0" prefWidth="127.0" style="-fx-border-color: #FFFFFF;" text="602505" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </bottom>
+                     <left>
+                        <Label fx:id="labeln27" alignment="CENTER" contentDisplay="CENTER" prefHeight="19.0" prefWidth="71.0" style="-fx-border-color: #FFFFFF;" text="DEBE" textAlignment="RIGHT" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </left>
+                     <right>
+                        <Label fx:id="labelv27" alignment="CENTER" prefHeight="19.0" prefWidth="34.0" style="-fx-border-color: #FFFFFF;" text="0" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </right>
+                     <top>
+                        <Label alignment="CENTER" prefHeight="33.0" prefWidth="119.0" style="-fx-border-color: #FFFFFF;" text="Metodos Numericos" textAlignment="CENTER" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="10.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </top>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </BorderPane>
+                  <BorderPane fx:id="bp32" layoutX="820.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #2A2121; -fx-background-color: #dadada;">
+                     <bottom>
+                        <Label fx:id="labelc32" alignment="CENTER" prefHeight="17.0" prefWidth="127.0" style="-fx-border-color: #FFFFFF;" text="602605" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </bottom>
+                     <left>
+                        <Label fx:id="labeln32" alignment="CENTER" contentDisplay="CENTER" prefHeight="19.0" prefWidth="71.0" style="-fx-border-color: #FFFFFF;" text="DEBE" textAlignment="RIGHT" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </left>
+                     <right>
+                        <Label fx:id="labelv32" alignment="CENTER" prefHeight="19.0" prefWidth="34.0" style="-fx-border-color: #FFFFFF;" text="0" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </right>
+                     <top>
+                        <Label alignment="CENTER" prefHeight="33.0" prefWidth="119.0" style="-fx-border-color: #FFFFFF;" text="Catedra Democracia y Paz" textAlignment="CENTER" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="10.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </top>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </BorderPane>
+                  <BorderPane fx:id="bp38" layoutX="1020.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #2A2121; -fx-background-color: #dadada;">
+                     <bottom>
+                        <Label fx:id="labelc38" alignment="CENTER" prefHeight="17.0" prefWidth="127.0" style="-fx-border-color: #FFFFFF;" text="602705" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </bottom>
+                     <left>
+                        <Label fx:id="labeln38" alignment="CENTER" contentDisplay="CENTER" prefHeight="19.0" prefWidth="71.0" style="-fx-border-color: #FFFFFF;" text="DEBE" textAlignment="RIGHT" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </left>
+                     <right>
+                        <Label fx:id="labelv38" alignment="CENTER" prefHeight="19.0" prefWidth="34.0" style="-fx-border-color: #FFFFFF;" text="0" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </right>
+                     <top>
+                        <Label alignment="CENTER" prefHeight="33.0" prefWidth="119.0" style="-fx-border-color: #FFFFFF;" text="Electiva Profesional II" textAlignment="CENTER" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="10.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </top>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </BorderPane>
+                  <BorderPane fx:id="bp44" layoutX="1138.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #2A2121; -fx-background-color: #dadada;">
+                     <bottom>
+                        <Label fx:id="labelc44" alignment="CENTER" prefHeight="17.0" prefWidth="127.0" style="-fx-border-color: #FFFFFF;" text="602805" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </bottom>
+                     <left>
+                        <Label fx:id="labeln44" alignment="CENTER" contentDisplay="CENTER" prefHeight="19.0" prefWidth="71.0" style="-fx-border-color: #FFFFFF;" text="DEBE" textAlignment="RIGHT" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </left>
+                     <right>
+                        <Label fx:id="labelv44" alignment="CENTER" prefHeight="19.0" prefWidth="34.0" style="-fx-border-color: #FFFFFF;" text="0" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </right>
+                     <top>
+                        <Label alignment="CENTER" prefHeight="33.0" prefWidth="119.0" style="-fx-border-color: #FFFFFF;" text="Gestion de Proyectos y Empresarial" textAlignment="CENTER" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="10.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </top>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </BorderPane>
+                  <BorderPane fx:id="bp49" layoutX="1161.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #2A2121; -fx-background-color: #dadada;">
+                     <bottom>
+                        <Label fx:id="labelc49" alignment="CENTER" prefHeight="17.0" prefWidth="127.0" style="-fx-border-color: #FFFFFF;" text="602905" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </bottom>
+                     <left>
+                        <Label fx:id="labeln49" alignment="CENTER" contentDisplay="CENTER" prefHeight="19.0" prefWidth="71.0" style="-fx-border-color: #FFFFFF;" text="DEBE" textAlignment="RIGHT" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </left>
+                     <right>
+                        <Label fx:id="labelv49" alignment="CENTER" prefHeight="19.0" prefWidth="34.0" style="-fx-border-color: #FFFFFF;" text="0" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </right>
+                     <top>
+                        <Label alignment="CENTER" prefHeight="33.0" prefWidth="119.0" style="-fx-border-color: #FFFFFF;" text="Electiva Complementaria I" textAlignment="CENTER" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="10.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </top>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </BorderPane>
+                  <BorderPane fx:id="bpvacio7" layoutX="1180.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </BorderPane>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </HBox>
+            <HBox layoutY="634.0" prefHeight="100.0" prefWidth="1315.0">
+               <children>
+                  <BorderPane fx:id="bp6" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #2A2121; -fx-background-color: #dadada;">
+                     <bottom>
+                        <Label fx:id="labelc6" alignment="CENTER" prefHeight="17.0" prefWidth="127.0" style="-fx-border-color: #FFFFFF;" text="602106" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </bottom>
+                     <left>
+                        <Label fx:id="labeln6" alignment="CENTER" contentDisplay="CENTER" prefHeight="19.0" prefWidth="71.0" style="-fx-border-color: #FFFFFF;" text="DEBE" textAlignment="RIGHT" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </left>
+                     <right>
+                        <Label fx:id="labelv6" alignment="CENTER" prefHeight="19.0" prefWidth="34.0" style="-fx-border-color: #FFFFFF;" text="0" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </right>
+                     <top>
+                        <Label fx:id="labelt6" alignment="CENTER" prefHeight="33.0" prefWidth="119.0" style="-fx-border-color: #FFFFFF;" text="Pensamiento Logico Matematico" textAlignment="CENTER" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="10.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </top>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </BorderPane>
+                  <BorderPane fx:id="bpvacio1" layoutX="15.0" layoutY="15.0" prefHeight="200.0" prefWidth="200.0">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </BorderPane>
+                  <BorderPane fx:id="bpvacio2" layoutX="220.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </BorderPane>
+                  <BorderPane fx:id="bp22" layoutX="420.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #2A2121; -fx-background-color: #dadada;">
+                     <bottom>
+                        <Label fx:id="labelc22" alignment="CENTER" prefHeight="17.0" prefWidth="127.0" style="-fx-border-color: #FFFFFF;" text="602406" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </bottom>
+                     <left>
+                        <Label fx:id="labeln22" alignment="CENTER" contentDisplay="CENTER" prefHeight="19.0" prefWidth="71.0" style="-fx-border-color: #FFFFFF;" text="DEBE" textAlignment="RIGHT" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </left>
+                     <right>
+                        <Label fx:id="labelv22" alignment="CENTER" prefHeight="19.0" prefWidth="34.0" style="-fx-border-color: #FFFFFF;" text="0" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </right>
+                     <top>
+                        <Label alignment="CENTER" prefHeight="33.0" prefWidth="119.0" style="-fx-border-color: #FFFFFF;" text="Ciencia Tecnologia y Desarrollo" textAlignment="CENTER" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="10.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </top>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </BorderPane>
+                  <BorderPane fx:id="bpvacio3" layoutX="620.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </BorderPane>
+                  <BorderPane fx:id="bp33" layoutX="820.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #2A2121; -fx-background-color: #dadada;">
+                     <bottom>
+                        <Label fx:id="labelc33" alignment="CENTER" prefHeight="17.0" prefWidth="127.0" style="-fx-border-color: #FFFFFF;" text="602606" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </bottom>
+                     <left>
+                        <Label fx:id="labeln33" alignment="CENTER" contentDisplay="CENTER" prefHeight="19.0" prefWidth="71.0" style="-fx-border-color: #FFFFFF;" text="DEBE" textAlignment="RIGHT" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </left>
+                     <right>
+                        <Label fx:id="labelv33" alignment="CENTER" prefHeight="19.0" prefWidth="34.0" style="-fx-border-color: #FFFFFF;" text="0" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </right>
+                     <top>
+                        <Label alignment="CENTER" prefHeight="33.0" prefWidth="119.0" style="-fx-border-color: #FFFFFF;" text="Electiva Profesional I" textAlignment="CENTER" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="10.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </top>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </BorderPane>
+                  <BorderPane fx:id="bp39" layoutX="1020.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" style="-fx-border-color: #2A2121; -fx-background-color: #dadada;">
+                     <bottom>
+                        <Label fx:id="labelc39" alignment="CENTER" prefHeight="17.0" prefWidth="127.0" style="-fx-border-color: #FFFFFF;" text="602706" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </bottom>
+                     <left>
+                        <Label fx:id="labeln39" alignment="CENTER" contentDisplay="CENTER" prefHeight="19.0" prefWidth="71.0" style="-fx-border-color: #FFFFFF;" text="DEBE" textAlignment="RIGHT" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </left>
+                     <right>
+                        <Label fx:id="labelv39" alignment="CENTER" prefHeight="19.0" prefWidth="34.0" style="-fx-border-color: #FFFFFF;" text="0" BorderPane.alignment="CENTER">
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </right>
+                     <top>
+                        <Label alignment="CENTER" prefHeight="33.0" prefWidth="119.0" style="-fx-border-color: #FFFFFF;" text="Economia" textAlignment="CENTER" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="10.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                           </BorderPane.margin>
+                        </Label>
+                     </top>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </BorderPane>
+                  <BorderPane fx:id="bpvacio4" layoutX="1138.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </BorderPane>
+                  <BorderPane fx:id="bpvacio5" layoutX="1161.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </BorderPane>
+                  <BorderPane fx:id="bpvacio6" layoutX="1180.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </BorderPane>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </HBox>
+            <Button fx:id="p" layoutX="14.0" layoutY="9.0" mnemonicParsing="false" onAction="#EventoButton" text="Button" />
+            <TextField fx:id="txtfieldcodigo" layoutX="98.0" layoutY="9.0" />
+            <Label layoutX="704.0" layoutY="13.0" prefHeight="17.0" prefWidth="120.0" text="Nombre Estudiante:" />
+            <Label fx:id="labelnombre" layoutX="887.0" layoutY="13.0" prefHeight="17.0" prefWidth="232.0" />
+         </children>
+      </AnchorPane>
+   </content>
+</ScrollPane>
