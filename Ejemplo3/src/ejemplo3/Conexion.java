@@ -48,17 +48,16 @@ public class Conexion extends Application {
                   Connection conexion = DriverManager.getConnection(cc);
                   Statement comando = conexion.createStatement();
               
-                  String sql = "Select nombre_materia, codigo_materia, nombre_estudiante, codigo_estudiante, nota_materia ,veces from estudiantes where codigo_estudiante="+codigo;
+                  String sql = "Select  codigo_estudiante,codigo_materia,veces ,nota from materia_estudiante where codigo_estudiante="+codigo;
                   System.out.println(sql);
                   ResultSet resultado = comando.executeQuery(sql);
                   while(resultado.next()) {
-                  Vector<String> vect = new Vector<String>(6);
-                vect.add(resultado.getString("nombre_materia"));
-                vect.add(resultado.getString("codigo_materia"));
-                vect.add(resultado.getString("nombre_estudiante"));
+                  Vector<String> vect = new Vector<String>(4);
                 vect.add(resultado.getString("codigo_estudiante"));
-                vect.add(resultado.getString("nota_materia"));
+                vect.add(resultado.getString("codigo_materia"));
                 vect.add(resultado.getString("veces"));
+                vect.add(resultado.getString("nota"));
+               
                 List.add(vect);
                  }
                   resultado.close();

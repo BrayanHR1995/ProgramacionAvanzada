@@ -151,857 +151,857 @@ public class SemaforoController implements Initializable {
             
 
             for(int i=0;i<tam;i++){
-                labelnombre.setText((String) datos.get(0).get(2));
+                
                 if(labelc1.getText().equals((String) datos.get(i).get(1))){
-                    labeln1.setText((String) datos.get(i).get(4));
-                    labelv1.setText((String) datos.get(i).get(5));
+                    labeln1.setText((String) datos.get(i).get(3));
+                    labelv1.setText((String) datos.get(i).get(2));
                                
-                    if(Double.parseDouble(datos.get(i).get(4).toString())<3){
+                    if(Double.parseDouble(datos.get(i).get(3).toString())<3){
                         bp1.setStyle("-fx-background-color: #d94352" );
 
                     }
-                    if(Double.parseDouble(datos.get(i).get(4).toString())>=3){
+                    if(Double.parseDouble(datos.get(i).get(3).toString())>=3){
                         bp1.setStyle("-fx-background-color: #2fac66" );
 
                     }
                     
-                    if(Integer.parseInt(datos.get(i).get(5).toString())>=2){
+                    if(Integer.parseInt(datos.get(i).get(2).toString())>=2){
                         bp1.setStyle("-fx-background-color: #f9b233" );
                     }
                 }
                 
                 if(labelc2.getText().equals((String) datos.get(i).get(1))){
-                    labeln2.setText((String) datos.get(i).get(4));
-                    labelv2.setText((String) datos.get(i).get(5));
-                    if(Double.parseDouble(datos.get(i).get(4).toString())<3){
+                    labeln2.setText((String) datos.get(i).get(3));
+                    labelv2.setText((String) datos.get(i).get(2));
+                    if(Double.parseDouble(datos.get(i).get(3).toString())<3){
                         bp2.setStyle("-fx-background-color: #d94352" );
 
                     }
-                    if(Double.parseDouble(datos.get(i).get(4).toString())>=3){
+                    if(Double.parseDouble(datos.get(i).get(3).toString())>=3){
                         bp2.setStyle("-fx-background-color: #2fac66" );
                     }
-                    if(Integer.parseInt(datos.get(i).get(5).toString())>=2){
+                    if(Integer.parseInt(datos.get(i).get(2).toString())>=2){
                         bp2.setStyle("-fx-background-color: #f9b233" );
                     }                  
                 }
                 
                 if(labelc3.getText().equals((String) datos.get(i).get(1))){
-                    labeln3.setText((String) datos.get(i).get(4));
-                    labelv3.setText((String) datos.get(i).get(5));
+                    labeln3.setText((String) datos.get(i).get(3));
+                    labelv3.setText((String) datos.get(i).get(2));
                     
-                    if(Double.parseDouble(datos.get(i).get(4).toString())<3){
+                    if(Double.parseDouble(datos.get(i).get(3).toString())<3){
                         bp3.setStyle("-fx-background-color: #d94352" );
 
                     }
-                    if(Double.parseDouble(datos.get(i).get(4).toString())>=3){
+                    if(Double.parseDouble(datos.get(i).get(3).toString())>=3){
                         bp3.setStyle("-fx-background-color: #2fac66" );
                     }
-                    if (Integer.parseInt(datos.get(i).get(5).toString()) >= 2) {
+                    if (Integer.parseInt(datos.get(i).get(2).toString()) >= 2) {
                         bp3.setStyle("-fx-background-color: #f9b233");
                     }
                 }
                 
                 if(labelc4.getText().equals((String) datos.get(i).get(1))){
-                    labeln4.setText((String) datos.get(i).get(4));
-                    labelv4.setText((String) datos.get(i).get(5));
-                    if(Double.parseDouble(datos.get(i).get(4).toString())<3){
+                    labeln4.setText((String) datos.get(i).get(3));
+                    labelv4.setText((String) datos.get(i).get(2));
+                    if(Double.parseDouble(datos.get(i).get(3).toString())<3){
                         bp4.setStyle("-fx-background-color: #d94352" );
 
                     }
-                    if(Double.parseDouble(datos.get(i).get(4).toString())>=3){
+                    if(Double.parseDouble(datos.get(i).get(3).toString())>=3){
                         bp4.setStyle("-fx-background-color: #2fac66" );
 
                     }
-                    if(Integer.parseInt(datos.get(i).get(5).toString())>=2){
+                    if(Integer.parseInt(datos.get(i).get(2).toString())>=2){
                         bp4.setStyle("-fx-background-color: #f9b233" );
                     }
                 }
  
                 if(labelc5.getText().equals((String) datos.get(i).get(1))){
-                    labeln5.setText((String) datos.get(i).get(4));
-                    labelv5.setText((String) datos.get(i).get(5));
+                    labeln5.setText((String) datos.get(i).get(3));
+                    labelv5.setText((String) datos.get(i).get(2));
                     
-                    if(Double.parseDouble(datos.get(i).get(4).toString())<3){
+                    if(Double.parseDouble(datos.get(i).get(3).toString())<3){
                         bp5.setStyle("-fx-background-color: #d94352" );
 
                     }
-                    if(Double.parseDouble(datos.get(i).get(4).toString())>=3){
+                    if(Double.parseDouble(datos.get(i).get(3).toString())>=3){
                         bp5.setStyle("-fx-background-color: #2fac66" );
 
                     }
-                    if(Integer.parseInt(datos.get(i).get(5).toString())>=2){
+                    if(Integer.parseInt(datos.get(i).get(2).toString())>=2){
                         bp5.setStyle("-fx-background-color: #f9b233" );
                     }
                 }
                 
                 if(labelc6.getText().equals((String) datos.get(i).get(1))){
-                    labeln6.setText((String) datos.get(i).get(4));
-                    labelv6.setText((String) datos.get(i).get(5));
-                    if(Double.parseDouble(datos.get(i).get(4).toString())<3){
+                    labeln6.setText((String) datos.get(i).get(3));
+                    labelv6.setText((String) datos.get(i).get(2));
+                    if(Double.parseDouble(datos.get(i).get(3).toString())<3){
                         bp6.setStyle("-fx-background-color: #d94352" );
 
                     }
-                    if(Double.parseDouble(datos.get(i).get(4).toString())>=3){
+                    if(Double.parseDouble(datos.get(i).get(3).toString())>=3){
                         bp6.setStyle("-fx-background-color: #2fac66" );
 
                     }
-                    if(Integer.parseInt(datos.get(i).get(5).toString())>=2){
+                    if(Integer.parseInt(datos.get(i).get(2).toString())>=2){
                         bp6.setStyle("-fx-background-color: #f9b233" );
                     }
                 }
 
                 if(labelc7.getText().equals((String) datos.get(i).get(1))){
-                    labeln7.setText((String) datos.get(i).get(4));
-                    labelv7.setText((String) datos.get(i).get(5));
-                    if(Double.parseDouble(datos.get(i).get(4).toString())<3){
+                    labeln7.setText((String) datos.get(i).get(3));
+                    labelv7.setText((String) datos.get(i).get(2));
+                    if(Double.parseDouble(datos.get(i).get(3).toString())<3){
                         bp7.setStyle("-fx-background-color: #d94352" );
 
                     }
-                    if(Double.parseDouble(datos.get(i).get(4).toString())>=3){
+                    if(Double.parseDouble(datos.get(i).get(3).toString())>=3){
                         bp7.setStyle("-fx-background-color: #2fac66" );
 
                     }
-                    if(Integer.parseInt(datos.get(i).get(5).toString())>=2){
+                    if(Integer.parseInt(datos.get(i).get(2).toString())>=2){
                         bp7.setStyle("-fx-background-color: #f9b233" );
                     }
                 }
 
                 if(labelc8.getText().equals((String) datos.get(i).get(1))){
-                    labeln8.setText((String) datos.get(i).get(4));
-                    labelv8.setText((String) datos.get(i).get(5));
-                    if(Double.parseDouble(datos.get(i).get(4).toString())<3){
+                    labeln8.setText((String) datos.get(i).get(3));
+                    labelv8.setText((String) datos.get(i).get(2));
+                    if(Double.parseDouble(datos.get(i).get(3).toString())<3){
                         bp8.setStyle("-fx-background-color: #d94352" );
 
                     }
-                    if(Double.parseDouble(datos.get(i).get(4).toString())>=3){
+                    if(Double.parseDouble(datos.get(i).get(3).toString())>=3){
                         bp8.setStyle("-fx-background-color: #2fac66" );
 
                     }
-                    if(Integer.parseInt(datos.get(i).get(5).toString())>=2){
+                    if(Integer.parseInt(datos.get(i).get(2).toString())>=2){
                         bp8.setStyle("-fx-background-color: #f9b233" );
                     }
                 }
 
                 if(labelc9.getText().equals((String) datos.get(i).get(1))){
-                    labeln9.setText((String) datos.get(i).get(4));
-                    labelv9.setText((String) datos.get(i).get(5));
-                    if(Double.parseDouble(datos.get(i).get(4).toString())<3){
+                    labeln9.setText((String) datos.get(i).get(3));
+                    labelv9.setText((String) datos.get(i).get(2));
+                    if(Double.parseDouble(datos.get(i).get(3).toString())<3){
                         bp9.setStyle("-fx-background-color: #d94352" );
 
                     }
-                    if(Double.parseDouble(datos.get(i).get(4).toString())>=3){
+                    if(Double.parseDouble(datos.get(i).get(3).toString())>=3){
                         bp9.setStyle("-fx-background-color: #2fac66" );
 
                     }
-                    if(Integer.parseInt(datos.get(i).get(5).toString())>=2){
+                    if(Integer.parseInt(datos.get(i).get(2).toString())>=2){
                         bp9.setStyle("-fx-background-color: #f9b233" );
                     }
                 }
 
                 if(labelc10.getText().equals((String) datos.get(i).get(1))){
-                    labeln10.setText((String) datos.get(i).get(4));
-                    labelv10.setText((String) datos.get(i).get(5));
-                    if(Double.parseDouble(datos.get(i).get(4).toString())<3){
+                    labeln10.setText((String) datos.get(i).get(3));
+                    labelv10.setText((String) datos.get(i).get(2));
+                    if(Double.parseDouble(datos.get(i).get(3).toString())<3){
                         bp10.setStyle("-fx-background-color: #d94352" );
 
                     }
-                    if(Double.parseDouble(datos.get(i).get(4).toString())>=3){
+                    if(Double.parseDouble(datos.get(i).get(3).toString())>=3){
                         bp10.setStyle("-fx-background-color: #2fac66" );
 
                     }
-                    if(Integer.parseInt(datos.get(i).get(5).toString())>=2){
+                    if(Integer.parseInt(datos.get(i).get(2).toString())>=2){
                         bp10.setStyle("-fx-background-color: #f9b233" );
                     }
                 }
 
                 if(labelc11.getText().equals((String) datos.get(i).get(1))){
-                    labeln11.setText((String) datos.get(i).get(4));
-                    labelv11.setText((String) datos.get(i).get(5));
-                    if(Double.parseDouble(datos.get(i).get(4).toString())<3){
+                    labeln11.setText((String) datos.get(i).get(3));
+                    labelv11.setText((String) datos.get(i).get(2));
+                    if(Double.parseDouble(datos.get(i).get(3).toString())<3){
                         bp11.setStyle("-fx-background-color: #d94352" );
 
                     }
-                    if(Double.parseDouble(datos.get(i).get(4).toString())>=3){
+                    if(Double.parseDouble(datos.get(i).get(3).toString())>=3){
                         bp11.setStyle("-fx-background-color: #2fac66" );
 
                     }
-                    if(Integer.parseInt(datos.get(i).get(5).toString())>=2){
+                    if(Integer.parseInt(datos.get(i).get(2).toString())>=2){
                         bp11.setStyle("-fx-background-color: #f9b233" );
                     }
                 }
 
                 if(labelc12.getText().equals((String) datos.get(i).get(1))){
-                    labeln12.setText((String) datos.get(i).get(4));
-                    labelv12.setText((String) datos.get(i).get(5));
-                    if(Double.parseDouble(datos.get(i).get(4).toString())<3){
+                    labeln12.setText((String) datos.get(i).get(3));
+                    labelv12.setText((String) datos.get(i).get(2));
+                    if(Double.parseDouble(datos.get(i).get(3).toString())<3){
                         bp12.setStyle("-fx-background-color: #d94352" );
 
                     }
-                    if(Double.parseDouble(datos.get(i).get(4).toString())>=3){
+                    if(Double.parseDouble(datos.get(i).get(3).toString())>=3){
                         bp12.setStyle("-fx-background-color: #2fac66" );
 
                     }
-                    if(Integer.parseInt(datos.get(i).get(5).toString())>=2){
+                    if(Integer.parseInt(datos.get(i).get(2).toString())>=2){
                         bp12.setStyle("-fx-background-color: #f9b233" );
                     }
                 }
 
                 if(labelc13.getText().equals((String) datos.get(i).get(1))){
-                    labeln13.setText((String) datos.get(i).get(4));
-                    labelv13.setText((String) datos.get(i).get(5));
-                    if(Double.parseDouble(datos.get(i).get(4).toString())<3){
+                    labeln13.setText((String) datos.get(i).get(3));
+                    labelv13.setText((String) datos.get(i).get(2));
+                    if(Double.parseDouble(datos.get(i).get(3).toString())<3){
                         bp13.setStyle("-fx-background-color: #d94352" );
 
                     }
-                    if(Double.parseDouble(datos.get(i).get(4).toString())>=3){
+                    if(Double.parseDouble(datos.get(i).get(3).toString())>=3){
                         bp13.setStyle("-fx-background-color: #2fac66" );
 
                     }
-                    if(Integer.parseInt(datos.get(i).get(5).toString())>=2){
+                    if(Integer.parseInt(datos.get(i).get(2).toString())>=2){
                         bp13.setStyle("-fx-background-color: #f9b233" );
                     }
                 }
                 
                 
                 if(labelc14.getText().equals((String) datos.get(i).get(1))){
-                    labeln14.setText((String) datos.get(i).get(4));
-                    labelv14.setText((String) datos.get(i).get(5));
-                    if(Double.parseDouble(datos.get(i).get(4).toString())<3){
+                    labeln14.setText((String) datos.get(i).get(3));
+                    labelv14.setText((String) datos.get(i).get(2));
+                    if(Double.parseDouble(datos.get(i).get(3).toString())<3){
                         bp14.setStyle("-fx-background-color: #d94352" );
 
                     }
-                    if(Double.parseDouble(datos.get(i).get(4).toString())>=3){
+                    if(Double.parseDouble(datos.get(i).get(3).toString())>=3){
                         bp14.setStyle("-fx-background-color: #2fac66" );
 
                     }
-                    if(Integer.parseInt(datos.get(i).get(5).toString())>=2){
+                    if(Integer.parseInt(datos.get(i).get(2).toString())>=2){
                         bp14.setStyle("-fx-background-color: #f9b233" );
                     }
                 }
                 
                 if(labelc15.getText().equals((String) datos.get(i).get(1))){
-                    labeln15.setText((String) datos.get(i).get(4));
-                    labelv15.setText((String) datos.get(i).get(5));
-                    if(Double.parseDouble(datos.get(i).get(4).toString())<3){
+                    labeln15.setText((String) datos.get(i).get(3));
+                    labelv15.setText((String) datos.get(i).get(2));
+                    if(Double.parseDouble(datos.get(i).get(3).toString())<3){
                         bp15.setStyle("-fx-background-color: #d94352" );
 
                     }
-                    if(Double.parseDouble(datos.get(i).get(4).toString())>=3){
+                    if(Double.parseDouble(datos.get(i).get(3).toString())>=3){
                         bp15.setStyle("-fx-background-color: #2fac66" );
 
                     }
-                    if(Integer.parseInt(datos.get(i).get(5).toString())>=2){
+                    if(Integer.parseInt(datos.get(i).get(2).toString())>=2){
                         bp15.setStyle("-fx-background-color: #f9b233" );
                     }
                 }
                 
                 if(labelc16.getText().equals((String) datos.get(i).get(1))){
-                    labeln16.setText((String) datos.get(i).get(4));
-                    labelv16.setText((String) datos.get(i).get(5));
-                    if(Double.parseDouble(datos.get(i).get(4).toString())<3){
+                    labeln16.setText((String) datos.get(i).get(3));
+                    labelv16.setText((String) datos.get(i).get(2));
+                    if(Double.parseDouble(datos.get(i).get(3).toString())<3){
                         bp16.setStyle("-fx-background-color: #d94352" );
 
                     }
-                    if(Double.parseDouble(datos.get(i).get(4).toString())>=3){
+                    if(Double.parseDouble(datos.get(i).get(3).toString())>=3){
                         bp16.setStyle("-fx-background-color: #2fac66" );
 
                     }
-                    if(Integer.parseInt(datos.get(i).get(5).toString())>=2){
+                    if(Integer.parseInt(datos.get(i).get(2).toString())>=2){
                         bp16.setStyle("-fx-background-color: #f9b233" );
                     }
                 }
                 
                 if(labelc17.getText().equals((String) datos.get(i).get(1))){
-                    labeln17.setText((String) datos.get(i).get(4));
-                    labelv17.setText((String) datos.get(i).get(5));
-                    if(Double.parseDouble(datos.get(i).get(4).toString())<3){
+                    labeln17.setText((String) datos.get(i).get(3));
+                    labelv17.setText((String) datos.get(i).get(2));
+                    if(Double.parseDouble(datos.get(i).get(3).toString())<3){
                         bp17.setStyle("-fx-background-color: #d94352" );
 
                     }
-                    if(Double.parseDouble(datos.get(i).get(4).toString())>=3){
+                    if(Double.parseDouble(datos.get(i).get(3).toString())>=3){
                         bp17.setStyle("-fx-background-color: #2fac66" );
 
                     }
-                    if(Integer.parseInt(datos.get(i).get(5).toString())>=2){
+                    if(Integer.parseInt(datos.get(i).get(2).toString())>=2){
                         bp17.setStyle("-fx-background-color: #f9b233" );
                     }
                 }
                 
                 if(labelc18.getText().equals((String) datos.get(i).get(1))){
-                    labeln18.setText((String) datos.get(i).get(4));
-                    labelv18.setText((String) datos.get(i).get(5));
-                    if(Double.parseDouble(datos.get(i).get(4).toString())<3){
+                    labeln18.setText((String) datos.get(i).get(3));
+                    labelv18.setText((String) datos.get(i).get(2));
+                    if(Double.parseDouble(datos.get(i).get(3).toString())<3){
                         bp18.setStyle("-fx-background-color: #d94352" );
 
                     }
-                    if(Double.parseDouble(datos.get(i).get(4).toString())>=3){
+                    if(Double.parseDouble(datos.get(i).get(3).toString())>=3){
                         bp18.setStyle("-fx-background-color: #2fac66" );
 
                     }
-                    if(Integer.parseInt(datos.get(i).get(5).toString())>=2){
+                    if(Integer.parseInt(datos.get(i).get(2).toString())>=2){
                         bp18.setStyle("-fx-background-color: #f9b233" );
                     }
                 }
                 
                 if(labelc19.getText().equals((String) datos.get(i).get(1))){
-                    labeln19.setText((String) datos.get(i).get(4));
-                    labelv19.setText((String) datos.get(i).get(5));
-                    if(Double.parseDouble(datos.get(i).get(4).toString())<3){
+                    labeln19.setText((String) datos.get(i).get(3));
+                    labelv19.setText((String) datos.get(i).get(2));
+                    if(Double.parseDouble(datos.get(i).get(3).toString())<3){
                         bp19.setStyle("-fx-background-color: #d94352" );
 
                     }
-                    if(Double.parseDouble(datos.get(i).get(4).toString())>=3){
+                    if(Double.parseDouble(datos.get(i).get(3).toString())>=3){
                         bp19.setStyle("-fx-background-color: #2fac66" );
 
                     }
-                    if(Integer.parseInt(datos.get(i).get(5).toString())>=2){
+                    if(Integer.parseInt(datos.get(i).get(2).toString())>=2){
                         bp19.setStyle("-fx-background-color: #f9b233" );
                     }
                 }
                 
                 if(labelc20.getText().equals((String) datos.get(i).get(1))){
-                    labeln20.setText((String) datos.get(i).get(4));
-                    labelv20.setText((String) datos.get(i).get(5));
-                    if(Double.parseDouble(datos.get(i).get(4).toString())<3){
+                    labeln20.setText((String) datos.get(i).get(3));
+                    labelv20.setText((String) datos.get(i).get(2));
+                    if(Double.parseDouble(datos.get(i).get(3).toString())<3){
                         bp20.setStyle("-fx-background-color: #d94352" );
 
                     }
-                    if(Double.parseDouble(datos.get(i).get(4).toString())>=3){
+                    if(Double.parseDouble(datos.get(i).get(3).toString())>=3){
                         bp20.setStyle("-fx-background-color: #2fac66" );
 
                     }
-                    if(Integer.parseInt(datos.get(i).get(5).toString())>=2){
+                    if(Integer.parseInt(datos.get(i).get(2).toString())>=2){
                         bp20.setStyle("-fx-background-color: #f9b233" );
                     }
                 }
                 
                 if(labelc21.getText().equals((String) datos.get(i).get(1))){
-                    labeln21.setText((String) datos.get(i).get(4));
-                    labelv21.setText((String) datos.get(i).get(5));
-                    if(Double.parseDouble(datos.get(i).get(4).toString())<3){
+                    labeln21.setText((String) datos.get(i).get(3));
+                    labelv21.setText((String) datos.get(i).get(2));
+                    if(Double.parseDouble(datos.get(i).get(3).toString())<3){
                         bp21.setStyle("-fx-background-color: #d94352" );
 
                     }
-                    if(Double.parseDouble(datos.get(i).get(4).toString())>=3){
+                    if(Double.parseDouble(datos.get(i).get(3).toString())>=3){
                         bp21.setStyle("-fx-background-color: #2fac66" );
 
                     }
-                    if(Integer.parseInt(datos.get(i).get(5).toString())>=2){
+                    if(Integer.parseInt(datos.get(i).get(2).toString())>=2){
                         bp21.setStyle("-fx-background-color: #f9b233" );
                     }
                 }
 
                 if(labelc22.getText().equals((String) datos.get(i).get(1))){
-                    labeln2.setText((String) datos.get(i).get(4));
-                    labelv2.setText((String) datos.get(i).get(5));
-                    if(Double.parseDouble(datos.get(i).get(4).toString())<3){
+                    labeln2.setText((String) datos.get(i).get(3));
+                    labelv2.setText((String) datos.get(i).get(2));
+                    if(Double.parseDouble(datos.get(i).get(3).toString())<3){
                         bp2.setStyle("-fx-background-color: #d94352" );
 
                     }
-                    if(Double.parseDouble(datos.get(i).get(4).toString())>=3){
+                    if(Double.parseDouble(datos.get(i).get(3).toString())>=3){
                         bp22.setStyle("-fx-background-color: #2fac66" );
 
                     }
-                    if(Integer.parseInt(datos.get(i).get(5).toString())>=2){
+                    if(Integer.parseInt(datos.get(i).get(2).toString())>=2){
                         bp22.setStyle("-fx-background-color: #f9b233" );
                     }
                 }
                 
                 if(labelc23.getText().equals((String) datos.get(i).get(1))){
-                    labeln23.setText((String) datos.get(i).get(4));
-                    labelv23.setText((String) datos.get(i).get(5));
+                    labeln23.setText((String) datos.get(i).get(3));
+                    labelv23.setText((String) datos.get(i).get(2));
                                
-                    if(Double.parseDouble(datos.get(i).get(4).toString())<3){
+                    if(Double.parseDouble(datos.get(i).get(3).toString())<3){
                         bp23.setStyle("-fx-background-color: #d94352" );
 
                     }
-                    if(Double.parseDouble(datos.get(i).get(4).toString())>=3){
+                    if(Double.parseDouble(datos.get(i).get(3).toString())>=3){
                         bp23.setStyle("-fx-background-color: #2fac66" );
 
                     }
                     
-                    if(Integer.parseInt(datos.get(i).get(5).toString())>=2){
+                    if(Integer.parseInt(datos.get(i).get(2).toString())>=2){
                         bp23.setStyle("-fx-background-color: #f9b233" );
                     }
                 }
                 
                 if(labelc24.getText().equals((String) datos.get(i).get(1))){
-                    labeln24.setText((String) datos.get(i).get(4));
-                    labelv4.setText((String) datos.get(i).get(5));
-                    if(Double.parseDouble(datos.get(i).get(4).toString())<3){
+                    labeln24.setText((String) datos.get(i).get(3));
+                    labelv24.setText((String) datos.get(i).get(2));
+                    if(Double.parseDouble(datos.get(i).get(3).toString())<3){
                         bp24.setStyle("-fx-background-color: #d94352" );
 
                     }
-                    if(Double.parseDouble(datos.get(i).get(4).toString())>=3){
+                    if(Double.parseDouble(datos.get(i).get(3).toString())>=3){
                         bp24.setStyle("-fx-background-color: #2fac66" );
                     }
-                    if(Integer.parseInt(datos.get(i).get(5).toString())>=2){
+                    if(Integer.parseInt(datos.get(i).get(2).toString())>=2){
                         bp24.setStyle("-fx-background-color: #f9b233" );
                     }                  
                 }
                 
                 if(labelc25.getText().equals((String) datos.get(i).get(1))){
-                    labeln25.setText((String) datos.get(i).get(4));
-                    labelv25.setText((String) datos.get(i).get(5));
+                    labeln25.setText((String) datos.get(i).get(3));
+                    labelv25.setText((String) datos.get(i).get(2));
                     
-                    if(Double.parseDouble(datos.get(i).get(4).toString())<3){
+                    if(Double.parseDouble(datos.get(i).get(3).toString())<3){
                         bp25.setStyle("-fx-background-color: #d94352" );
 
                     }
-                    if(Double.parseDouble(datos.get(i).get(4).toString())>=3){
+                    if(Double.parseDouble(datos.get(i).get(3).toString())>=3){
                         bp25.setStyle("-fx-background-color: #2fac66" );
                     }
-                    if (Integer.parseInt(datos.get(i).get(5).toString()) >= 2) {
+                    if (Integer.parseInt(datos.get(i).get(2).toString()) >= 2) {
                         bp25.setStyle("-fx-background-color: #f9b233");
                     }
                 }
                 
                 if(labelc26.getText().equals((String) datos.get(i).get(1))){
-                    labeln26.setText((String) datos.get(i).get(4));
-                    labelv26.setText((String) datos.get(i).get(5));
-                    if(Double.parseDouble(datos.get(i).get(4).toString())<3){
+                    labeln26.setText((String) datos.get(i).get(3));
+                    labelv26.setText((String) datos.get(i).get(2));
+                    if(Double.parseDouble(datos.get(i).get(3).toString())<3){
                         bp26.setStyle("-fx-background-color: #d94352" );
 
                     }
-                    if(Double.parseDouble(datos.get(i).get(4).toString())>=3){
+                    if(Double.parseDouble(datos.get(i).get(3).toString())>=3){
                         bp26.setStyle("-fx-background-color: #2fac66" );
 
                     }
-                    if(Integer.parseInt(datos.get(i).get(5).toString())>=2){
+                    if(Integer.parseInt(datos.get(i).get(2).toString())>=2){
                         bp26.setStyle("-fx-background-color: #f9b233" );
                     }
                 }
  
                 if(labelc27.getText().equals((String) datos.get(i).get(1))){
-                    labeln27.setText((String) datos.get(i).get(4));
-                    labelv27.setText((String) datos.get(i).get(5));
+                    labeln27.setText((String) datos.get(i).get(3));
+                    labelv27.setText((String) datos.get(i).get(2));
                     
-                    if(Double.parseDouble(datos.get(i).get(4).toString())<3){
+                    if(Double.parseDouble(datos.get(i).get(3).toString())<3){
                         bp27.setStyle("-fx-background-color: #d94352" );
 
                     }
-                    if(Double.parseDouble(datos.get(i).get(4).toString())>=3){
+                    if(Double.parseDouble(datos.get(i).get(3).toString())>=3){
                         bp27.setStyle("-fx-background-color: #2fac66" );
 
                     }
-                    if(Integer.parseInt(datos.get(i).get(5).toString())>=2){
+                    if(Integer.parseInt(datos.get(i).get(2).toString())>=2){
                         bp27.setStyle("-fx-background-color: #f9b233" );
                     }
                 }
                 
                 if(labelc28.getText().equals((String) datos.get(i).get(1))){
-                    labeln28.setText((String) datos.get(i).get(4));
-                    labelv28.setText((String) datos.get(i).get(5));
-                    if(Double.parseDouble(datos.get(i).get(4).toString())<3){
+                    labeln28.setText((String) datos.get(i).get(3));
+                    labelv28.setText((String) datos.get(i).get(2));
+                    if(Double.parseDouble(datos.get(i).get(3).toString())<3){
                         bp28.setStyle("-fx-background-color: #d94352" );
 
                     }
-                    if(Double.parseDouble(datos.get(i).get(4).toString())>=3){
+                    if(Double.parseDouble(datos.get(i).get(3).toString())>=3){
                         bp28.setStyle("-fx-background-color: #2fac66" );
 
                     }
-                    if(Integer.parseInt(datos.get(i).get(5).toString())>=2){
+                    if(Integer.parseInt(datos.get(i).get(2).toString())>=2){
                         bp28.setStyle("-fx-background-color: #f9b233" );
                     }
                 }
 
                 if(labelc29.getText().equals((String) datos.get(i).get(1))){
-                    labeln29.setText((String) datos.get(i).get(4));
-                    labelv29.setText((String) datos.get(i).get(5));
-                    if(Double.parseDouble(datos.get(i).get(4).toString())<3){
+                    labeln29.setText((String) datos.get(i).get(3));
+                    labelv29.setText((String) datos.get(i).get(2));
+                    if(Double.parseDouble(datos.get(i).get(3).toString())<3){
                         bp29.setStyle("-fx-background-color: #d94352" );
 
                     }
-                    if(Double.parseDouble(datos.get(i).get(4).toString())>=3){
+                    if(Double.parseDouble(datos.get(i).get(3).toString())>=3){
                         bp29.setStyle("-fx-background-color: #2fac66" );
 
                     }
-                    if(Integer.parseInt(datos.get(i).get(5).toString())>=2){
+                    if(Integer.parseInt(datos.get(i).get(2).toString())>=2){
                         bp29.setStyle("-fx-background-color: #f9b233" );
                     }
                 }
 
                 if(labelc30.getText().equals((String) datos.get(i).get(1))){
-                    labeln30.setText((String) datos.get(i).get(4));
-                    labelv30.setText((String) datos.get(i).get(5));
-                    if(Double.parseDouble(datos.get(i).get(4).toString())<3){
+                    labeln30.setText((String) datos.get(i).get(3));
+                    labelv30.setText((String) datos.get(i).get(2));
+                    if(Double.parseDouble(datos.get(i).get(3).toString())<3){
                         bp30.setStyle("-fx-background-color: #d94352" );
 
                     }
-                    if(Double.parseDouble(datos.get(i).get(4).toString())>=3){
+                    if(Double.parseDouble(datos.get(i).get(3).toString())>=3){
                         bp30.setStyle("-fx-background-color: #2fac66" );
 
                     }
-                    if(Integer.parseInt(datos.get(i).get(5).toString())>=2){
+                    if(Integer.parseInt(datos.get(i).get(2).toString())>=2){
                         bp30.setStyle("-fx-background-color: #f9b233" );
                     }
                 }
 
                 if(labelc31.getText().equals((String) datos.get(i).get(1))){
-                    labeln31.setText((String) datos.get(i).get(4));
-                    labelv31.setText((String) datos.get(i).get(5));
-                    if(Double.parseDouble(datos.get(i).get(4).toString())<3){
+                    labeln31.setText((String) datos.get(i).get(3));
+                    labelv31.setText((String) datos.get(i).get(2));
+                    if(Double.parseDouble(datos.get(i).get(3).toString())<3){
                         bp31.setStyle("-fx-background-color: #d94352" );
 
                     }
-                    if(Double.parseDouble(datos.get(i).get(4).toString())>=3){
+                    if(Double.parseDouble(datos.get(i).get(3).toString())>=3){
                         bp31.setStyle("-fx-background-color: #2fac66" );
 
                     }
-                    if(Integer.parseInt(datos.get(i).get(5).toString())>=2){
+                    if(Integer.parseInt(datos.get(i).get(2).toString())>=2){
                         bp31.setStyle("-fx-background-color: #f9b233" );
                     }
                 }
 
                 if(labelc32.getText().equals((String) datos.get(i).get(1))){
-                    labeln32.setText((String) datos.get(i).get(4));
-                    labelv32.setText((String) datos.get(i).get(5));
-                    if(Double.parseDouble(datos.get(i).get(4).toString())<3){
+                    labeln32.setText((String) datos.get(i).get(3));
+                    labelv32.setText((String) datos.get(i).get(2));
+                    if(Double.parseDouble(datos.get(i).get(3).toString())<3){
                         bp32.setStyle("-fx-background-color: #d94352" );
 
                     }
-                    if(Double.parseDouble(datos.get(i).get(4).toString())>=3){
+                    if(Double.parseDouble(datos.get(i).get(3).toString())>=3){
                         bp32.setStyle("-fx-background-color: #2fac66" );
 
                     }
-                    if(Integer.parseInt(datos.get(i).get(5).toString())>=2){
+                    if(Integer.parseInt(datos.get(i).get(2).toString())>=2){
                         bp32.setStyle("-fx-background-color: #f9b233" );
                     }
                 }
 
                 if(labelc33.getText().equals((String) datos.get(i).get(1))){
-                    labeln33.setText((String) datos.get(i).get(4));
-                    labelv33.setText((String) datos.get(i).get(5));
-                    if(Double.parseDouble(datos.get(i).get(4).toString())<3){
+                    labeln33.setText((String) datos.get(i).get(3));
+                    labelv33.setText((String) datos.get(i).get(2));
+                    if(Double.parseDouble(datos.get(i).get(3).toString())<3){
                         bp33.setStyle("-fx-background-color: #d94352" );
 
                     }
-                    if(Double.parseDouble(datos.get(i).get(4).toString())>=3){
+                    if(Double.parseDouble(datos.get(i).get(3).toString())>=3){
                         bp33.setStyle("-fx-background-color: #2fac66" );
 
                     }
-                    if(Integer.parseInt(datos.get(i).get(5).toString())>=2){
+                    if(Integer.parseInt(datos.get(i).get(2).toString())>=2){
                         bp33.setStyle("-fx-background-color: #f9b233" );
                     }
                 }
 
                 if(labelc34.getText().equals((String) datos.get(i).get(1))){
-                    labeln34.setText((String) datos.get(i).get(4));
-                    labelv34.setText((String) datos.get(i).get(5));
-                    if(Double.parseDouble(datos.get(i).get(4).toString())<3){
+                    labeln34.setText((String) datos.get(i).get(3));
+                    labelv34.setText((String) datos.get(i).get(2));
+                    if(Double.parseDouble(datos.get(i).get(3).toString())<3){
                         bp34.setStyle("-fx-background-color: #d94352" );
 
                     }
-                    if(Double.parseDouble(datos.get(i).get(4).toString())>=3){
+                    if(Double.parseDouble(datos.get(i).get(3).toString())>=3){
                         bp34.setStyle("-fx-background-color: #2fac66" );
 
                     }
-                    if(Integer.parseInt(datos.get(i).get(5).toString())>=2){
+                    if(Integer.parseInt(datos.get(i).get(2).toString())>=2){
                         bp34.setStyle("-fx-background-color: #f9b233" );
                     }
                 }
 
                 if(labelc35.getText().equals((String) datos.get(i).get(1))){
-                    labeln35.setText((String) datos.get(i).get(4));
-                    labelv35.setText((String) datos.get(i).get(5));
-                    if(Double.parseDouble(datos.get(i).get(4).toString())<3){
+                    labeln35.setText((String) datos.get(i).get(3));
+                    labelv35.setText((String) datos.get(i).get(2));
+                    if(Double.parseDouble(datos.get(i).get(3).toString())<3){
                         bp35.setStyle("-fx-background-color: #d94352" );
 
                     }
-                    if(Double.parseDouble(datos.get(i).get(4).toString())>=3){
+                    if(Double.parseDouble(datos.get(i).get(3).toString())>=3){
                         bp35.setStyle("-fx-background-color: #2fac66" );
 
                     }
-                    if(Integer.parseInt(datos.get(i).get(5).toString())>=2){
+                    if(Integer.parseInt(datos.get(i).get(2).toString())>=2){
                         bp35.setStyle("-fx-background-color: #f9b233" );
                     }
                 }
                 
                 
                 if(labelc36.getText().equals((String) datos.get(i).get(1))){
-                    labeln36.setText((String) datos.get(i).get(4));
-                    labelv36.setText((String) datos.get(i).get(5));
-                    if(Double.parseDouble(datos.get(i).get(4).toString())<3){
+                    labeln36.setText((String) datos.get(i).get(3));
+                    labelv36.setText((String) datos.get(i).get(2));
+                    if(Double.parseDouble(datos.get(i).get(3).toString())<3){
                         bp36.setStyle("-fx-background-color: #d94352" );
 
                     }
-                    if(Double.parseDouble(datos.get(i).get(4).toString())>=3){
+                    if(Double.parseDouble(datos.get(i).get(3).toString())>=3){
                         bp36.setStyle("-fx-background-color: #2fac66" );
 
                     }
-                    if(Integer.parseInt(datos.get(i).get(5).toString())>=2){
+                    if(Integer.parseInt(datos.get(i).get(2).toString())>=2){
                         bp36.setStyle("-fx-background-color: #f9b233" );
                     }
                 }
                 
                 if(labelc37.getText().equals((String) datos.get(i).get(1))){
-                    labeln37.setText((String) datos.get(i).get(4));
-                    labelv37.setText((String) datos.get(i).get(5));
-                    if(Double.parseDouble(datos.get(i).get(4).toString())<3){
+                    labeln37.setText((String) datos.get(i).get(3));
+                    labelv37.setText((String) datos.get(i).get(2));
+                    if(Double.parseDouble(datos.get(i).get(3).toString())<3){
                         bp37.setStyle("-fx-background-color: #d94352" );
 
                     }
-                    if(Double.parseDouble(datos.get(i).get(4).toString())>=3){
+                    if(Double.parseDouble(datos.get(i).get(3).toString())>=3){
                         bp37.setStyle("-fx-background-color: #2fac66" );
 
                     }
-                    if(Integer.parseInt(datos.get(i).get(5).toString())>=2){
+                    if(Integer.parseInt(datos.get(i).get(2).toString())>=2){
                         bp37.setStyle("-fx-background-color: #f9b233" );
                     }
                 }
                 
                 if(labelc38.getText().equals((String) datos.get(i).get(1))){
-                    labeln38.setText((String) datos.get(i).get(4));
-                    labelv38.setText((String) datos.get(i).get(5));
-                    if(Double.parseDouble(datos.get(i).get(4).toString())<3){
+                    labeln38.setText((String) datos.get(i).get(3));
+                    labelv38.setText((String) datos.get(i).get(2));
+                    if(Double.parseDouble(datos.get(i).get(3).toString())<3){
                         bp38.setStyle("-fx-background-color: #d94352" );
 
                     }
-                    if(Double.parseDouble(datos.get(i).get(4).toString())>=3){
+                    if(Double.parseDouble(datos.get(i).get(3).toString())>=3){
                         bp38.setStyle("-fx-background-color: #2fac66" );
 
                     }
-                    if(Integer.parseInt(datos.get(i).get(5).toString())>=2){
+                    if(Integer.parseInt(datos.get(i).get(2).toString())>=2){
                         bp38.setStyle("-fx-background-color: #f9b233" );
                     }
                 }
                 
                 if(labelc39.getText().equals((String) datos.get(i).get(1))){
-                    labeln39.setText((String) datos.get(i).get(4));
-                    labelv39.setText((String) datos.get(i).get(5));
-                    if(Double.parseDouble(datos.get(i).get(4).toString())<3){
+                    labeln39.setText((String) datos.get(i).get(3));
+                    labelv39.setText((String) datos.get(i).get(2));
+                    if(Double.parseDouble(datos.get(i).get(3).toString())<3){
                         bp39.setStyle("-fx-background-color: #d94352" );
 
                     }
-                    if(Double.parseDouble(datos.get(i).get(4).toString())>=3){
+                    if(Double.parseDouble(datos.get(i).get(3).toString())>=3){
                         bp39.setStyle("-fx-background-color: #2fac66" );
 
                     }
-                    if(Integer.parseInt(datos.get(i).get(5).toString())>=2){
+                    if(Integer.parseInt(datos.get(i).get(2).toString())>=2){
                         bp39.setStyle("-fx-background-color: #f9b233" );
                     }
                 }
                 
                 if(labelc40.getText().equals((String) datos.get(i).get(1))){
-                    labeln40.setText((String) datos.get(i).get(4));
-                    labelv39.setText((String) datos.get(i).get(5));
-                    if(Double.parseDouble(datos.get(i).get(4).toString())<3){
+                    labeln40.setText((String) datos.get(i).get(3));
+                    labelv40.setText((String) datos.get(i).get(2));
+                    if(Double.parseDouble(datos.get(i).get(3).toString())<3){
                         bp40.setStyle("-fx-background-color: #d94352" );
 
                     }
-                    if(Double.parseDouble(datos.get(i).get(4).toString())>=3){
+                    if(Double.parseDouble(datos.get(i).get(3).toString())>=3){
                         bp40.setStyle("-fx-background-color: #2fac66" );
 
                     }
-                    if(Integer.parseInt(datos.get(i).get(5).toString())>=2){
+                    if(Integer.parseInt(datos.get(i).get(2).toString())>=2){
                         bp40.setStyle("-fx-background-color: #f9b233" );
                     }
                 }
                 
                 if(labelc41.getText().equals((String) datos.get(i).get(1))){
-                    labeln41.setText((String) datos.get(i).get(4));
-                    labelv41.setText((String) datos.get(i).get(5));
-                    if(Double.parseDouble(datos.get(i).get(4).toString())<3){
+                    labeln41.setText((String) datos.get(i).get(3));
+                    labelv41.setText((String) datos.get(i).get(2));
+                    if(Double.parseDouble(datos.get(i).get(3).toString())<3){
                         bp41.setStyle("-fx-background-color: #d94352" );
 
                     }
-                    if(Double.parseDouble(datos.get(i).get(4).toString())>=3){
+                    if(Double.parseDouble(datos.get(i).get(3).toString())>=3){
                         bp41.setStyle("-fx-background-color: #2fac66" );
 
                     }
-                    if(Integer.parseInt(datos.get(i).get(5).toString())>=2){
+                    if(Integer.parseInt(datos.get(i).get(2).toString())>=2){
                         bp41.setStyle("-fx-background-color: #f9b233" );
                     }
                 }
                 
                 if(labelc42.getText().equals((String) datos.get(i).get(1))){
-                    labeln42.setText((String) datos.get(i).get(4));
-                    labelv42.setText((String) datos.get(i).get(5));
-                    if(Double.parseDouble(datos.get(i).get(4).toString())<3){
+                    labeln42.setText((String) datos.get(i).get(3));
+                    labelv42.setText((String) datos.get(i).get(2));
+                    if(Double.parseDouble(datos.get(i).get(3).toString())<3){
                         bp42.setStyle("-fx-background-color: #d94352" );
 
                     }
-                    if(Double.parseDouble(datos.get(i).get(4).toString())>=3){
+                    if(Double.parseDouble(datos.get(i).get(3).toString())>=3){
                         bp42.setStyle("-fx-background-color: #2fac66" );
 
                     }
-                    if(Integer.parseInt(datos.get(i).get(5).toString())>=2){
+                    if(Integer.parseInt(datos.get(i).get(2).toString())>=2){
                         bp42.setStyle("-fx-background-color: #f9b233" );
                     }
                 }
                 
                 if(labelc43.getText().equals((String) datos.get(i).get(1))){
-                    labeln43.setText((String) datos.get(i).get(4));
-                    labelv43.setText((String) datos.get(i).get(5));
-                    if(Double.parseDouble(datos.get(i).get(4).toString())<3){
+                    labeln43.setText((String) datos.get(i).get(3));
+                    labelv43.setText((String) datos.get(i).get(2));
+                    if(Double.parseDouble(datos.get(i).get(3).toString())<3){
                         bp43.setStyle("-fx-background-color: #d94352" );
 
                     }
-                    if(Double.parseDouble(datos.get(i).get(4).toString())>=3){
+                    if(Double.parseDouble(datos.get(i).get(3).toString())>=3){
                         bp43.setStyle("-fx-background-color: #2fac66" );
 
                     }
-                    if(Integer.parseInt(datos.get(i).get(5).toString())>=2){
+                    if(Integer.parseInt(datos.get(i).get(2).toString())>=2){
                         bp43.setStyle("-fx-background-color: #f9b233" );
                     }
                 }
 
                 if(labelc44.getText().equals((String) datos.get(i).get(1))){
-                    labeln44.setText((String) datos.get(i).get(4));
-                    labelv44.setText((String) datos.get(i).get(5));
-                    if(Double.parseDouble(datos.get(i).get(4).toString())<3){
+                    labeln44.setText((String) datos.get(i).get(3));
+                    labelv44.setText((String) datos.get(i).get(2));
+                    if(Double.parseDouble(datos.get(i).get(3).toString())<3){
                         bp44.setStyle("-fx-background-color: #d94352" );
 
                     }
-                    if(Double.parseDouble(datos.get(i).get(4).toString())>=3){
+                    if(Double.parseDouble(datos.get(i).get(3).toString())>=3){
                         bp44.setStyle("-fx-background-color: #2fac66" );
 
                     }
-                    if(Integer.parseInt(datos.get(i).get(5).toString())>=2){
+                    if(Integer.parseInt(datos.get(i).get(2).toString())>=2){
                         bp44.setStyle("-fx-background-color: #f9b233" );
                     }
                 }
                 
                 if(labelc45.getText().equals((String) datos.get(i).get(1))){
-                    labeln45.setText((String) datos.get(i).get(4));
-                    labelv45.setText((String) datos.get(i).get(5));
-                    if(Double.parseDouble(datos.get(i).get(4).toString())<3){
+                    labeln45.setText((String) datos.get(i).get(3));
+                    labelv45.setText((String) datos.get(i).get(2));
+                    if(Double.parseDouble(datos.get(i).get(3).toString())<3){
                         bp45.setStyle("-fx-background-color: #d94352" );
 
                     }
-                    if(Double.parseDouble(datos.get(i).get(4).toString())>=3){
+                    if(Double.parseDouble(datos.get(i).get(3).toString())>=3){
                         bp45.setStyle("-fx-background-color: #2fac66" );
 
                     }
-                    if(Integer.parseInt(datos.get(i).get(5).toString())>=2){
+                    if(Integer.parseInt(datos.get(i).get(2).toString())>=2){
                         bp45.setStyle("-fx-background-color: #f9b233" );
                     }
                 }
                 
                 if(labelc46.getText().equals((String) datos.get(i).get(1))){
-                    labeln46.setText((String) datos.get(i).get(4));
-                    labelv46.setText((String) datos.get(i).get(5));
-                    if(Double.parseDouble(datos.get(i).get(4).toString())<3){
+                    labeln46.setText((String) datos.get(i).get(3));
+                    labelv46.setText((String) datos.get(i).get(2));
+                    if(Double.parseDouble(datos.get(i).get(3).toString())<3){
                         bp46.setStyle("-fx-background-color: #d94352" );
 
                     }
-                    if(Double.parseDouble(datos.get(i).get(4).toString())>=3){
+                    if(Double.parseDouble(datos.get(i).get(3).toString())>=3){
                         bp46.setStyle("-fx-background-color: #2fac66" );
 
                     }
-                    if(Integer.parseInt(datos.get(i).get(5).toString())>=2){
+                    if(Integer.parseInt(datos.get(i).get(2).toString())>=2){
                         bp46.setStyle("-fx-background-color: #f9b233" );
                     }
                 }
                 
                 if(labelc47.getText().equals((String) datos.get(i).get(1))){
-                    labeln47.setText((String) datos.get(i).get(4));
-                    labelv47.setText((String) datos.get(i).get(5));
-                    if(Double.parseDouble(datos.get(i).get(4).toString())<3){
+                    labeln47.setText((String) datos.get(i).get(3));
+                    labelv47.setText((String) datos.get(i).get(2));
+                    if(Double.parseDouble(datos.get(i).get(3).toString())<3){
                         bp47.setStyle("-fx-background-color: #d94352" );
 
                     }
-                    if(Double.parseDouble(datos.get(i).get(4).toString())>=3){
+                    if(Double.parseDouble(datos.get(i).get(3).toString())>=3){
                         bp47.setStyle("-fx-background-color: #2fac66" );
 
                     }
-                    if(Integer.parseInt(datos.get(i).get(5).toString())>=2){
+                    if(Integer.parseInt(datos.get(i).get(2).toString())>=2){
                         bp47.setStyle("-fx-background-color: #f9b233" );
                     }
                 }
                 
                 if(labelc48.getText().equals((String) datos.get(i).get(1))){
-                    labeln48.setText((String) datos.get(i).get(4));
-                    labelv48.setText((String) datos.get(i).get(5));
-                    if(Double.parseDouble(datos.get(i).get(4).toString())<3){
+                    labeln48.setText((String) datos.get(i).get(3));
+                    labelv48.setText((String) datos.get(i).get(2));
+                    if(Double.parseDouble(datos.get(i).get(3).toString())<3){
                         bp48.setStyle("-fx-background-color: #d94352" );
 
                     }
-                    if(Double.parseDouble(datos.get(i).get(4).toString())>=3){
+                    if(Double.parseDouble(datos.get(i).get(3).toString())>=3){
                         bp48.setStyle("-fx-background-color: #2fac66" );
 
                     }
-                    if(Integer.parseInt(datos.get(i).get(5).toString())>=2){
+                    if(Integer.parseInt(datos.get(i).get(2).toString())>=2){
                         bp48.setStyle("-fx-background-color: #f9b233" );
                     }
                 }
                 
                 if(labelc49.getText().equals((String) datos.get(i).get(1))){
-                    labeln49.setText((String) datos.get(i).get(4));
-                    labelv49.setText((String) datos.get(i).get(5));
-                    if(Double.parseDouble(datos.get(i).get(4).toString())<3){
+                    labeln49.setText((String) datos.get(i).get(3));
+                    labelv49.setText((String) datos.get(i).get(2));
+                    if(Double.parseDouble(datos.get(i).get(3).toString())<3){
                         bp49.setStyle("-fx-background-color: #d94352" );
 
                     }
-                    if(Double.parseDouble(datos.get(i).get(4).toString())>=3){
+                    if(Double.parseDouble(datos.get(i).get(2).toString())>=3){
                         bp49.setStyle("-fx-background-color: #2fac66" );
 
                     }
-                    if(Integer.parseInt(datos.get(i).get(5).toString())>=2){
+                    if(Integer.parseInt(datos.get(i).get(2).toString())>=2){
                         bp49.setStyle("-fx-background-color: #f9b233" );
                     }
                 }
                 
                 if(labelc50.getText().equals((String) datos.get(i).get(1))){
-                    labeln50.setText((String) datos.get(i).get(4));
-                    labelv50.setText((String) datos.get(i).get(5));
-                    if(Double.parseDouble(datos.get(i).get(4).toString())<3){
+                    labeln50.setText((String) datos.get(i).get(3));
+                    labelv50.setText((String) datos.get(i).get(2));
+                    if(Double.parseDouble(datos.get(i).get(3).toString())<3){
                         bp50.setStyle("-fx-background-color: #d94352" );
 
                     }
-                    if(Double.parseDouble(datos.get(i).get(4).toString())>=3){
+                    if(Double.parseDouble(datos.get(i).get(3).toString())>=3){
                         bp50.setStyle("-fx-background-color: #2fac66" );
 
                     }
-                    if(Integer.parseInt(datos.get(i).get(5).toString())>=2){
+                    if(Integer.parseInt(datos.get(i).get(2).toString())>=2){
                         bp50.setStyle("-fx-background-color: #f9b233" );
                     }
                 }
                 
                 if(labelc51.getText().equals((String) datos.get(i).get(1))){
-                    labeln51.setText((String) datos.get(i).get(4));
-                    labelv51.setText((String) datos.get(i).get(5));
-                    if(Double.parseDouble(datos.get(i).get(4).toString())<3){
+                    labeln51.setText((String) datos.get(i).get(3));
+                    labelv51.setText((String) datos.get(i).get(2));
+                    if(Double.parseDouble(datos.get(i).get(3).toString())<3){
                         bp51.setStyle("-fx-background-color: #d94352" );
 
                     }
-                    if(Double.parseDouble(datos.get(i).get(4).toString())>=3){
+                    if(Double.parseDouble(datos.get(i).get(3).toString())>=3){
                         bp51.setStyle("-fx-background-color: #2fac66" );
 
                     }
-                    if(Integer.parseInt(datos.get(i).get(5).toString())>=2){
+                    if(Integer.parseInt(datos.get(i).get(2).toString())>=2){
                         bp51.setStyle("-fx-background-color: #f9b233" );
                     }
                 }
                 
                 if(labelc52.getText().equals((String) datos.get(i).get(1))){
-                    labeln52.setText((String) datos.get(i).get(4));
-                    labelv52.setText((String) datos.get(i).get(5));
-                    if(Double.parseDouble(datos.get(i).get(4).toString())<3){
+                    labeln52.setText((String) datos.get(i).get(3));
+                    labelv52.setText((String) datos.get(i).get(2));
+                    if(Double.parseDouble(datos.get(i).get(3).toString())<3){
                         bp52.setStyle("-fx-background-color: #d94352" );
 
                     }
-                    if(Double.parseDouble(datos.get(i).get(4).toString())>=3){
+                    if(Double.parseDouble(datos.get(i).get(3).toString())>=3){
                         bp52.setStyle("-fx-background-color: #2fac66" );
 
                     }
-                    if(Integer.parseInt(datos.get(i).get(5).toString())>=2){
+                    if(Integer.parseInt(datos.get(i).get(2).toString())>=2){
                         bp52.setStyle("-fx-background-color: #f9b233" );
                     }
                 }
                 
                 if(labelc53.getText().equals((String) datos.get(i).get(1))){
-                    labeln53.setText((String) datos.get(i).get(4));
-                    labelv53.setText((String) datos.get(i).get(5));
-                    if(Double.parseDouble(datos.get(i).get(4).toString())<3){
+                    labeln53.setText((String) datos.get(i).get(3));
+                    labelv53.setText((String) datos.get(i).get(2));
+                    if(Double.parseDouble(datos.get(i).get(3).toString())<3){
                         bp53.setStyle("-fx-background-color: #d94352" );
 
                     }
-                    if(Double.parseDouble(datos.get(i).get(4).toString())>=3){
+                    if(Double.parseDouble(datos.get(i).get(3).toString())>=3){
                         bp53.setStyle("-fx-background-color: #2fac66" );
 
                     }
-                    if(Integer.parseInt(datos.get(i).get(5).toString())>=2){
+                    if(Integer.parseInt(datos.get(i).get(2).toString())>=2){
                         bp53.setStyle("-fx-background-color: #f9b233" );
                     }
                 }

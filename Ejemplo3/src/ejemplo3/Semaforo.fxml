@@ -2319,8 +2319,6 @@
             </HBox>
             <Button fx:id="p" layoutX="14.0" layoutY="9.0" mnemonicParsing="false" onAction="#EventoButton" text="Button" />
             <TextField fx:id="txtfieldcodigo" layoutX="98.0" layoutY="9.0" />
-            <Label layoutX="704.0" layoutY="13.0" prefHeight="17.0" prefWidth="120.0" text="Nombre Estudiante:" />
-            <Label fx:id="labelnombre" layoutX="887.0" layoutY="13.0" prefHeight="17.0" prefWidth="232.0" />
          </children>
       </AnchorPane>
    </content>
